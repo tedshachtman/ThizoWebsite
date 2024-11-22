@@ -189,6 +189,10 @@ h1, h2, h3, h4, h5, h6 {
     transform: translateY(-0.3125rem);
 }
 
+.solution-content p {
+    color: #000;
+}
+
 .solution-image img {
     width: 100%;
     height: auto;
@@ -233,7 +237,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .support-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: calc(var(--spacing-unit) * 1.25);
 }
 
@@ -257,7 +261,12 @@ h1, h2, h3, h4, h5, h6 {
     width: 3.75rem;
     height: 3.75rem;
 }
-
+.card-content p {
+    color: #000;
+}
+.support-card p {
+    color: #000;
+}
 /* Resources Section */
 .resources {
     padding: calc(var(--spacing-unit) * 5) var(--spacing-unit);
@@ -289,6 +298,10 @@ h1, h2, h3, h4, h5, h6 {
     overflow: hidden;
     transition: transform 0.3s ease;
     text-decoration: none;
+}
+
+.resource-content p {
+    color: #000;
 }
 
 .resource-card:hover {
