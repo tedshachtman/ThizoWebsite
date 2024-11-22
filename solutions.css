@@ -149,7 +149,7 @@ body {
 .hero-content {
     position: absolute;
     top: 50%; /* Centers content vertically */
-    left: 10%; /* Adjusts horizontal position */
+    left: 5%; /* Adjusts horizontal position */
     transform: translateY(-50%); /* Adjusts for exact vertical centering */
     max-width: 600px;
     z-index: 2; /* Places content above the overlay */
