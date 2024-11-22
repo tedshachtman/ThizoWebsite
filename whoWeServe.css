@@ -1,0 +1,650 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Autodesk Sans', sans-serif;
+    line-height: 1.6;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Navbar Section */
+/* Navigation links */
+nav a, .nav-link {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500; /* Medium weight for clarity */
+    text-transform: uppercase; /* Optional: make links uppercase */
+    color: #00474f; /* Customize color */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Button styles */
+.button, .btn {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500; /* Medium weight for buttons */
+    color: #fff;
+    background-color: #ffa500; /* Customize button color */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.button:hover, .btn:hover {
+    background-color: #028F67; /* Darker on hover */
+}
+
+.navbar {
+    background-color: #ffffff;
+    padding: 20px 0;
+}
+
+.logo img {
+    width: 120px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: center;
+}
+
+.nav-links ul {
+    list-style: none;
+    display: inline-flex;
+    gap: 30px;
+    margin: 0;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav-links ul li a:hover {
+    color: #028F67;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.cta-buttons .button {
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s;
+}
+
+.demo-button {
+    background-color: #08584B;
+    color: #fff;
+}
+
+.login-button {
+    background-color: #08584B;
+    color: #fff;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    padding: 50px 20px;
+    background-image: url('https://i.ibb.co/HzBB6y2/Screenshot-2024-06-10-at-9-30-35-AM.png'); /* Updated background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 1800px;
+    margin: 0 auto;
+    height: 75vh;
+    overflow: hidden;
+}
+
+/* Overlay Effect */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white */
+    z-index: 1; /* Ensure overlay appears above the background but below content */
+}
+
+/* Hero Content */
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    max-width: 600px;
+    z-index: 2;
+    text-align: center;
+    margin-right: 50px; /* Pushes content away from the image */
+}
+
+.hero-content h1 {
+    font-size: 2.8rem;
+    color: #3A3A46;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    color: #08584B;
+}
+
+/* Hero Buttons */
+.hero-buttons {
+    margin-top: 20px;
+    text-align: center
+    display: flex;
+    gap: 20px;
+}
+
+.hero-buttons .button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #08584B;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    text-align: center; /* Aligns buttons to the center without using flex properties */
+}
+
+.hero-buttons .button:hover {
+    background-color: #028F67;
+}
+
+/* Foreground Image Styling */
+.hero-foreground {
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
+}
+
+.hero-foreground img {
+    max-width: 700px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero {
+        height: auto;
+        max-width: 100%;
+        padding: 20px;
+    }
+    .hero-content {
+        position: relative;
+        top: unset;
+        left: unset;
+        transform: none;
+        max-width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+    .hero-foreground {
+        position: relative;
+        top: unset;
+        transform: none;
+        right: 0;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    .hero-buttons {
+        text-align: center;
+    }
+}
+
+/* Solutions Section (Section 2) */
+.solutions {
+    padding: 60px 20px;
+    background-color: #E8E8E8; /* Background color for visual distinction */
+    margin-top: 0px; /* Space between sections */
+    text-align: center;
+}
+
+.solutions-title {
+    font-size: 2.5rem;
+    color: #00574f;
+    margin-bottom: 40px; /* Match spacing to Section 4's title */
+}
+
+.solutions-container {
+    max-width: 1200px;
+    margin: 0 auto; /* Center the content */
+}
+
+.solutions-cards {
+    display: flex;
+    justify-content: space-between; /* Space cards evenly across the page */
+    gap: 20px;
+}
+
+.solution-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 30%; /* Each card takes up roughly one-third of the width */
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.solution-card:hover {
+    transform: translateY(-5px);
+}
+
+.solution-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.solution-content {
+    padding: 20px;
+}
+
+.solution-content h3 {
+    font-size: 1.5rem;
+    color: #00574f;
+    margin-bottom: 10px;
+}
+
+.solution-content p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* Responsive Styles for Solutions Section */
+@media (max-width: 768px) {
+    .solutions-cards {
+        flex-direction: column; /* Stack cards vertically on small screens */
+        gap: 20px;
+    }
+
+    .solution-card {
+        width: 100%; /* Make each card take full width on smaller screens */
+    }
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+h3 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 1rem;
+    color: #FF6F00;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+ul li::before {
+    content: '+';
+    font-size: 1.5rem;
+    position: absolute;
+    left: -20px;
+    top: -5px;
+    color: #FF6F00;
+}
+
+/* Section Styling */
+.content-section {
+    background-color: #FFFFFF;
+    padding: 60px 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.content-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    max-width: 1200px;
+}
+
+.text-content {
+    padding: 20px;
+}
+
+.image-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Reverse Layout for Alternating Sections */
+.reverse-layout .content-container {
+    grid-template-columns: 1fr 1fr;
+    direction: rtl;
+}
+
+.reverse-layout .text-content {
+    direction: ltr;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .content-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .reverse-layout .content-container {
+        direction: ltr;
+    }
+
+    .text-content {
+        padding: 20px 0;
+    }
+}
+  
+/* Resources Section (Section 4) */
+.resources {
+    padding: 100px 100px;
+    background-color: #e8e8e8 !important; /* Ensure section has correct background */
+    margin-top: 0; /* Remove top margin to eliminate lighter grey */
+    text-align: center;
+}
+
+.resources-title {
+    font-size: 2.5rem;
+    color: #08584B;
+    background-color: #e8e8e8 !important; /* Ensure background matches container */
+    margin-top: 60px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.resources-container {
+    max-width: 1200px;
+    background-color: #e8e8e8 !important;
+    color: #333;
+    margin: 40px auto;
+}
+
+.resources-cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.resource-card {
+    background-color: #ffffff; /* Set card background to white */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 45%;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.resource-card:hover {
+    transform: translateY(-5px);
+}
+
+.resource-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.resource-content {
+    padding: 20px;
+}
+
+.resource-content h3 {
+    font-size: 1.5rem;
+    color: #08584B;
+    margin-bottom: 10px;
+}
+
+.resource-content p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.5;
+}
+
+.browse-link {
+    font-size: 1.1rem;
+    color: #f47801;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    margin-bottom: 40px;
+}
+
+.browse-link:hover {
+    text-decoration: underline;
+}
+
+/* Footer Section */
+/* Form inputs */
+input, textarea, select {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+/* Footer text */
+footer {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #777; /* Lighter color for footer */
+}
+
+.footer {
+    background-color: #e8e8e8;
+    padding: 150px 20px;
+    color: #00574f;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
+}
+
+.footer-description {
+    flex: 1;
+    max-width: 33%;
+}
+
+.footer-logo {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.footer-description p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.social-links {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.social-links a img {
+    width: 30px;
+    height: 30px;
+}
+
+.contact-info {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.contact-info a {
+    color: #ff6a00;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Links Columns */
+.footer-links {
+    display: flex;
+    flex: 2;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    flex: 1;
+    max-width: 200px;
+}
+
+.footer-column h4 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #00574f;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Move New to Thizo Column Right by 1 1/2 Inch */
+.new-to-thizo {
+    margin-left: 1.5in; /* Move the "New to Thizo?" column 1 1/2 inches to the right */
+}
+
+/* Footer Bottom Section */
+.footer-bottom {
+    border-top: 1px solid #e0e0e0;
+    padding: 20px 0;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: #333;
+}
+
+.legal-links {
+    display: flex;
+    gap: 20px;
+}
+
+.legal-links a {
+    color: #333;
+    text-decoration: none;
+}
+
+.legal-links a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Footer Styles */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-description {
+        max-width: 100%;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-column {
+        max-width: 100%;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .new-to-thizo {
+        margin-left: 0; /* Remove additional margin for mobile view */
+    }
+}
+/* Remove underline from all links */
+a {
+    text-decoration: none;
+    color: inherit; /* Keeps the color the same as the surrounding text */
+}
+ul li::before {
+    content: none; /* This will remove the '+' symbol */
+}
