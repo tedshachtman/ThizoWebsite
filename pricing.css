@@ -157,7 +157,12 @@ h3 {
 .custom-quote {
     padding: var(--spacing-xl) min(5%, var(--spacing-lg));
     background-color: var(--background-light);
+    text-align: center; /* Centers all text inside the section */
 }
+.custom-quote h3 {
+    color: black; /* Sets the text color of h3 elements to black */
+}
+
 
 .company-types {
     display: grid;
@@ -173,8 +178,10 @@ h3 {
     background-color: #fff;
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
-    display: grid;
-    place-content: center;
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Stack image and text vertically */
+    justify-content: center; /* Centers content vertically */
+    align-items: center; /* Centers content horizontally */
     text-align: center;
     gap: var(--spacing-sm);
     transition: transform 0.3s, box-shadow 0.3s;
@@ -184,7 +191,9 @@ h3 {
     width: min(3.125rem, 15vw);
     height: auto;
     aspect-ratio: 1;
+    object-fit: contain; /* Ensures the image maintains its aspect ratio */
 }
+
 
 /* Features Section */
 .features {
