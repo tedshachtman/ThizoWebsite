@@ -1,0 +1,119 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #e8e8e8;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+/* Apply to all headings (H1 to H6) */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700; /* Bold for main headings */
+    color: #333; /* Adjust color to suit your design */
+}
+
+/* Slightly lighter for subheadings */
+h2, h3 {
+    font-weight: 600;
+}
+/* General body text */
+body, p, li, span, .body-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400; /* Regular weight for body content */
+    color: #555; /* Adjust color to suit your design */
+    line-height: 1.6; /* Add line height for readability */
+}
+
+
+/* FAQ Section Styles */
+.faq-section {
+    padding: 60px 5%;
+    background-color: #e8e8e8;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-section h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.faq-question {
+    width: 100%;
+    background: none;
+    border: none;
+    text-align: left;
+    padding: 20px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #0077b6;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-icon {
+    font-size: 1.5rem;
+    color: #028f67;
+    transition: transform 0.3s;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    padding: 0 20px;
+    font-size: 1rem;
+    color: #555;
+}
+
+.faq-answer p {
+    margin: 15px 0;
+}
+
+/* FAQ Item Expanded */
+.faq-question[aria-expanded="true"] + .faq-answer {
+    max-height: 200px; /* Adjust based on answer content */
+    padding-top: 10px;
+}
+
+.faq-question[aria-expanded="true"] .faq-icon {
+    transform: rotate(45deg);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .faq-section {
+        padding: 40px 3%;
+    }
+
+    .faq-section h1 {
+        font-size: 2rem;
+    }
+
+    .faq-question {
+        font-size: 1.1rem;
+    }
+}
+/* Remove underline from all links */
+a {
+    text-decoration: none;
+    color: inherit; /* Keeps the color the same as the surrounding text */
+}
+
+/* Optional: Add underline on hover */
+a:hover {
+    text-decoration: underline;
+}
