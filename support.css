@@ -20,6 +20,8 @@ body {
     justify-content: space-between;
 }
 
+
+
 /* Navbar Section */
 /* Navigation links */
 nav a, .nav-link {
@@ -300,121 +302,118 @@ body {
         grid-template-columns: 1fr;
     }
 }
-/* Footer Styles */
+/* Footer Section */
 /* Form inputs */
-input,
-textarea,
-select {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
+input, textarea, select {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
 }
 
 /* Footer text */
 footer {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  color: #e8e8e8; /* Lighter color for footer */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #777; /* Lighter color for footer */
 }
 
 .footer {
-  background-color: #e8e8e8;
-  padding: 60px 20px;
-  color: #00574f;
+    background-color: #e8e8e8;
+    padding: 150px 20px;
+    color: #00574f;
 }
 
 .footer-container {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 1200px;
-  margin: 0 auto;
-  gap: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
 }
 
 .footer-description {
-  flex: 1;
-  max-width: 33%;
-  text-align: left;
+    flex: 1;
+    max-width: 33%;
 }
 
 .footer-logo {
-  width: 150px;
-  margin-bottom: 20px;
+    width: 150px;
+    margin-bottom: 20px;
 }
 
 .footer-description p {
-  font-size: 1rem;
-  line-height: 1.6;
-  margin-bottom: 20px;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
 }
 
 .social-links {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
 }
 
 .social-links a img {
-  width: 30px;
-  height: 30px;
+    width: 30px;
+    height: 30px;
 }
 
 .contact-info {
-  font-size: 1rem;
-  margin-bottom: 20px;
+    font-size: 1rem;
+    margin-bottom: 20px;
 }
 
 .contact-info a {
-  color: #ff6a00;
-  text-decoration: none;
+    color: #ff6a00;
+    text-decoration: none;
 }
 
 .contact-info a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 /* Footer Links Columns */
 .footer-links {
-  display: flex;
-  flex: 2;
-  justify-content: space-between;
-  gap: 40px;
-  flex-wrap: wrap;
+    display: flex;
+    flex: 2;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
 }
 
 .footer-column {
-  flex: 1;
-  max-width: 200px;
+    flex: 1;
+    max-width: 200px;
 }
 
 .footer-column h4 {
-  font-size: 1.2rem;
-  margin-bottom: 15px;
-  color: #08584B;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #00574f;
 }
 
 .footer-column ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .footer-column ul li {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .footer-column ul li a {
-  color: #333;
-  text-decoration: none;
-  font-size: 1rem;
+    color: #333;
+    text-decoration: none;
+    font-size: 1rem;
 }
 
 .footer-column ul li a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
-/* New to Thizo Column Adjustment */
+/* Move New to Thizo Column Right by 1 1/2 Inch */
 .new-to-thizo {
-  margin-left: 1.5in; /* Remove or adjust if unnecessary */
+    margin-left: 1.5in; /* Move the "New to Thizo?" column 1 1/2 inches to the right */
 }
 
 /* Footer Bottom Section */
@@ -429,70 +428,59 @@ footer {
 }
 
 .footer-bottom p {
-  margin: 10px 0; /* Add margin to separate each item */
-  text-align: center; /* Center align the text */
-  color: #333;
+    margin: 0;
+    color: #333;
 }
 
 .legal-links {
-  display: flex;
-  justify-content: center; /* Center the links */
-  gap: 20px;
+    display: flex;
+    gap: 20px;
 }
 
 .legal-links a {
-  color: #333;
-  text-decoration: none;
+    color: #333;
+    text-decoration: none;
 }
 
 .legal-links a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 /* Responsive Footer Styles */
 @media (max-width: 768px) {
-  .footer-container {
-    flex-direction: column;
-    gap: 20px;
-  }
+    .footer-container {
+        flex-direction: column;
+        gap: 20px;
+    }
 
-  .footer-description {
-    max-width: 100%; /* Ensure full width for mobile */
-  }
+    .footer-description {
+        max-width: 100%;
+    }
 
-  .footer-links {
-    flex-direction: column; /* Stack links vertically */
-    gap: 20px;
-  }
+    .footer-links {
+        flex-direction: column;
+        gap: 20px;
+    }
 
-  .footer-column {
-    max-width: 100%;
-  }
+    .footer-column {
+        max-width: 100%;
+    }
 
-  .footer-bottom {
-    flex-direction: column;
-    text-align: center;
-    gap: 10px;
-  }
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
 
-  .new-to-thizo {
-    margin-left: 0px; /* Remove margin for mobile view */
-  }
+    .new-to-thizo {
+        margin-left: 0; /* Remove additional margin for mobile view */
+    }
 }
-
 /* Remove underline from all links */
 a {
-  text-decoration: none;
-  color: inherit; /* Keeps the color the same as the surrounding text */
+    text-decoration: none;
+    color: inherit; /* Keeps the color the same as the surrounding text */
 }
-/* Highlight selected company type cards */
-.company-type {
-  cursor: pointer; /* Show pointer on hover */
-  transition: transform 0.2s; /* Smooth transform on hover */
-}
-
-.company-type.selected {
-  background-color: #9BBCD9; /* Light blue background for selected */
-  border: 2px solid #1C80A0; /* Teal border for selected */
-  transform: scale(1.05); /* Slightly enlarge selected card */
+ul li::before {
+    content: none; /* This will remove the '+' symbol */
 }

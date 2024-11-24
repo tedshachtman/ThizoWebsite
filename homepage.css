@@ -29,10 +29,12 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Container */
 .container {
-    width: 100%;
-    max-width: 75rem;
-    margin: 0 auto;
-    padding: 0 var(--spacing-unit);
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 /* Navbar */
@@ -56,21 +58,27 @@ h1, h2, h3, h4, h5, h6 {
     height: auto;
 }
 
-.nav-links ul {
-    display: flex;
-    gap: calc(var(--spacing-unit) * 2);
-    list-style: none;
+.nav-links {
+    flex: 1;
+    text-align: center;
 }
 
-.nav-links a {
-    color: var(--text-color);
+.nav-links ul {
+    list-style: none;
+    display: inline-flex;
+    gap: 30px;
+    margin: 0;
+}
+
+.nav-links ul li a {
     text-decoration: none;
+    color: #3a3a46;
     font-weight: 600;
     transition: color 0.3s;
 }
 
-.nav-links a:hover {
-    color: var(--secondary-color);
+.nav-links ul li a:hover {
+    color: #028F67;
 }
 
 .cta-buttons {
@@ -93,6 +101,22 @@ h1, h2, h3, h4, h5, h6 {
 
 .demo-button:hover, .login-button:hover {
     background-color: var(--secondary-color);
+}
+
+
+
+/* Navbar Section */
+.navbar {
+    background-color: #ffffff;
+    padding: 20px 0;
+}
+/* Navigation links */
+nav a, .nav-link {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500; /* Medium weight for clarity */
+    text-transform: uppercase; /* Optional: make links uppercase */
+    color: #3A3A46; /* Customize color */
+    text-decoration: none; /* Remove underline */
 }
 
 /* Hero Section */
@@ -326,117 +350,183 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.1rem;
 }
 
-/* Footer */
+/* Footer Section */
+/* Form inputs */
+input, textarea, select {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+/* Footer text */
+footer {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #777; /* Lighter color for footer */
+}
+
 .footer {
-    background-color: var(--background-light);
-    padding: calc(var(--spacing-unit) * 5) var(--spacing-unit);
+    background-color: #E8E8E8; /* Change background color to #E8E8E8 */
+    padding: 150px 20px;
+    width: 100vw; /* Extend to full viewport width */
+    margin-left: calc(50% - 50vw); /* Center-align and extend to edges */
+    color: #00574f;
 }
 
 .footer-container {
-    max-width: 75rem;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 18.75rem), 1fr));
-    gap: calc(var(--spacing-unit) * 2.5);
-}
-
-.footer-logo {
-    width: 9.375rem;
-    height: auto;
-    margin-bottom: calc(var(--spacing-unit) * 1.25);
+    gap: 40px;
 }
 
 .footer-description {
-    max-width: 25rem;
+    flex: 1;
+    max-width: 33%;
+}
+
+.footer-logo {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.footer-description p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
 }
 
 .social-links {
     display: flex;
-    gap: calc(var(--spacing-unit) * 0.625);
-    margin: calc(var(--spacing-unit) * 1.25) 0;
+    gap: 10px;
+    margin-bottom: 20px;
 }
 
-.social-links img {
-    width: 1.875rem;
-    height: 1.875rem;
+.social-links a img {
+    width: 30px;
+    height: 30px;
 }
 
+.contact-info {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.contact-info a {
+    color: #ff6a00;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Links Columns */
 .footer-links {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 12.5rem), 1fr));
-    gap: calc(var(--spacing-unit) * 2.5);
+    display: flex;
+    flex: 2;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    flex: 1;
+    max-width: 200px;
 }
 
 .footer-column h4 {
-    margin-bottom: calc(var(--spacing-unit));
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #08584B;
 }
 
 .footer-column ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .footer-column ul li {
-    margin-bottom: calc(var(--spacing-unit) * 0.625);
+    margin-bottom: 10px;
 }
 
 .footer-column ul li a {
+    color: #333;
     text-decoration: none;
-    color: var(--text-color);
+    font-size: 1rem;
 }
 
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Move New to Thizo Column Right by 1 1/2 Inch */
+.new-to-thizo {
+    margin-left: 1.5in; /* Move the "New to Thizo?" column 1 1/2 inches to the right */
+}
+
+/* Footer Bottom Section */
 .footer-bottom {
-    max-width: 75rem;
-    margin: calc(var(--spacing-unit) * 2.5) auto 0;
-    padding-top: calc(var(--spacing-unit) * 1.25);
-    border-top: 0.0625rem solid rgba(0, 0, 0, 0.1);
+    border-top: 1px solid #e0e0e0;
+    padding: 20px 0;
+    margin-top: 40px;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    gap: var(--spacing-unit);
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+.footer-bottom p {
+    margin: 10;
+    color: #333;
 }
 
 .legal-links {
     display: flex;
-    gap: calc(var(--spacing-unit) * 1.25);
-    flex-wrap: wrap;
+    gap: 20px;
 }
 
-/* Responsive Design */
-@media (max-width: 48rem) {
-    .navbar .container {
-        flex-direction: column;
-        gap: calc(var(--spacing-unit));
-    }
+.legal-links a {
+    color: #333;
+    text-decoration: none;
+}
 
-    .nav-links ul {
-        flex-direction: column;
-        align-items: center;
-    }
+.legal-links a:hover {
+    text-decoration: underline;
+}
 
-    .support-container {
-        grid-template-columns: 1fr;
-    }
-
+/* Responsive Footer Styles */
+@media (max-width: 768px) {
     .footer-container {
-        grid-template-columns: 1fr;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-description {
+        max-width: 100%;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-column {
+        max-width: 100%;
     }
 
     .footer-bottom {
         flex-direction: column;
-        align-items: center;
         text-align: center;
+        gap: 10px;
     }
 
-    .hero-buttons {
-        flex-direction: column;
-        align-items: center;
+    .new-to-thizo {
+        margin-left: 0; /* Remove additional margin for mobile view */
     }
-}
-
-/* Accessibility */
-@media (prefers-reduced-motion: reduce) {
-    * {
-        animation: none !important;
-        transition: none !important;
-    }
+/* Remove underline from all links */
+a {
+    text-decoration: none;
+    color: inherit; /* Keeps the color the same as the surrounding text */
 }

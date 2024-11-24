@@ -47,6 +47,8 @@ nav a, .nav-link {
     text-decoration: none; /* Remove underline */
 }
 
+
+
 /* Button styles */
 .button, .btn {
     font-family: 'Montserrat', sans-serif;
@@ -81,7 +83,7 @@ nav a, .nav-link {
 
 .nav-links ul li a {
     text-decoration: none;
-    color: #3a3a46;
+    color: #333;
     font-weight: 600;
     transition: color 0.3s;
 }
