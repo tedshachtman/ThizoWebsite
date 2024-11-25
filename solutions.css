@@ -269,7 +269,7 @@ body, p, li, span, .body-text {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    width: 30%; /* Each card takes up roughly one-third of the width */
+    width: 40%; /* Each card takes up roughly one-third of the width */
     text-align: left;
     transition: transform 0.3s ease;
 }
@@ -280,7 +280,7 @@ body, p, li, span, .body-text {
 
 .solution-image img {
     width: 100%;
-    height: auto;
+    height: 200px;
     display: block;
 }
 
