@@ -35,6 +35,6 @@ nextButton.addEventListener('click', (event) => {
         alert('Please select at least one option.');
     } else {
         // Navigate to the pricing-practitioners page
-        window.location.href = "../pricing-practitioners.html"; // Make sure this path is correct
+        window.location.href = "pricing-revenue.html"; // Make sure this path is correct
     }
 });

@@ -105,7 +105,7 @@ nav a, .nav-link {
 .hero {
     position: relative;
     padding: 50px 20px;
-    background-image: url('https://i.ibb.co/HzBB6y2/Screenshot-2024-06-10-at-9-30-35-AM.png'); /* Updated background image */
+    background-image: url('https://i.ibb.co/fQY7kCf/Who-We-Serve-1.png'); /* Updated background image */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -434,9 +434,11 @@ ul li::before {
 
 .resource-image img {
     width: 100%;
-    height: auto;
+    height: 400px; /* Set a fixed height for images */
+    object-fit: cover; /* Ensures images are cropped proportionally */
     display: block;
 }
+
 
 .resource-content {
     padding: 20px;

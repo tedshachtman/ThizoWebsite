@@ -122,17 +122,18 @@ ns-serif;
 }
 
 .hero {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 80px;
-    background-image: url('https://i.ibb.co/28gdF4q/Adobe-Stock-434992921-Preview.jpg'); /* Background image */
-    background-size: cover; /* Ensures the image covers the whole section */
-    background-position: center; /* Center the background image */
-    background-repeat: no-repeat;
-    background-color: rgba(255, 255, 255, 0.3); /* Light washed-out effect */
-    background-blend-mode: lighten; /* This ensures the image looks washed out */
-    height: 40vh; /* Sets the hero section to take up 40% of the viewport height */
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  padding: 20px !important; /* Reduce padding to shrink vertical space */
+  background-image: url('https://i.ibb.co/cY65C1K/Pricing-1.png'); /* Background image */
+  background-size: cover; /* Ensures the image covers the section */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0.3); /* Light washed-out effect */
+  background-blend-mode: lighten; /* This ensures the image looks washed out */
+  height: 15vh !important; /* Reduce height to 15% of the viewport */
+  max-height: 200px; /* Additional constraint for devices with tall viewports */
 }
 
 .hero-content {
@@ -176,7 +177,7 @@ ns-serif;
 }
 
 .custom-quote h3 {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     color: #000;
     margin-bottom: 20px;
 }
@@ -238,14 +239,9 @@ ns-serif;
     transform: scale(1.05); /* Slightly larger on selection */
 }
 
-.company-type img {
-    width: 50px;
-    height: 50px;
-    margin-bottom: 10px;
-}
-
 .company-type p {
-    font-weight: 700;
+  font-size: 1.5rem; 
+  font-weight: 600;
     color: #333;
 }
 
@@ -440,24 +436,6 @@ footer {
     gap: 10px;
   }
 }
-
-/* Remove underline from all links */
-a {
-  text-decoration: none;
-  color: inherit; /* Keeps the color the same as the surrounding text */
-}
-/* Highlight selected company type cards */
-.company-type {
-  cursor: pointer; /* Show pointer on hover */
-  transition: transform 0.2s; /* Smooth transform on hover */
-}
-
-.company-type.selected {
-  background-color: #9BBCD9; /* Light blue background for selected */
-  border: 2px solid #1C80A0; /* Teal border for selected */
-  transform: scale(1.05); /* Slightly enlarge selected card */
-}
-
 
 /* Remove underline from all links */
 a {

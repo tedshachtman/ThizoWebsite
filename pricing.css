@@ -118,7 +118,7 @@ h3 {
     position: relative;
     min-height: 75vh;
     padding: var(--spacing-xl) var(--spacing-sm);
-    background-image: url('path-to-image.jpg');
+    background-image: url('https://i.ibb.co/cY65C1K/Pricing-1.png');
     background-size: cover;
     background-position: center;
     display: grid;
