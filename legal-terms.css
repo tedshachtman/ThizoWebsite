@@ -172,181 +172,121 @@ a:hover {
 }
 
 /* Footer Styles */
-/* Form inputs */
-input,
-textarea,
-select {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-}
-
-/* Footer text */
-footer {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  color: #e8e8e8; /* Lighter color for footer */
+/* Footer */
+.footer-wrapper {
+  background-color: #e8e8e8; /* Ensure the spacing matches the footer background */
+  padding: 50px 0; /* Add 50px spacing on top and bottom of the footer */
 }
 
 .footer {
-  background-color: #e8e8e8;
-  padding: 60px 20px;
-  color: #00574f;
+  background-color: #e8e8e8; /* Retain footer background color */
+  padding: 60px 0 calc(var(--spacing-unit) * 5); /* Maintain footer padding */
+  border-radius: 25px; /* Optional: Keep the rounded footer design */
+  border: none;
 }
 
 .footer-container {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 1200px;
+  max-width: 75rem;
   margin: 0 auto;
-  gap: 40px;
-}
-
-.footer-description {
-  flex: 1;
-  max-width: 33%;
-  text-align: left;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 18.75rem), 1fr));
+  gap: calc(var(--spacing-unit) * 2.5);
 }
 
 .footer-logo {
-  width: 150px;
-  margin-bottom: 20px;
+  width: 9.375rem;
+  height: auto;
+  margin-bottom: calc(var(--spacing-unit) * 1.25);
 }
 
-.footer-description p {
-  font-size: 1rem;
-  line-height: 1.6;
-  margin-bottom: 20px;
+.footer-description {
+  max-width: 25rem;
 }
 
 .social-links {
   display: flex;
-  gap: 10px;
-  margin-bottom: 20px;
+  gap: calc(var(--spacing-unit) * 0.625);
+  margin: calc(var(--spacing-unit) * 1.25) 0;
 }
 
-.social-links a img {
-  width: 30px;
-  height: 30px;
+.social-links img {
+  width: 1.875rem;
+  height: 1.875rem;
 }
 
-.contact-info {
-  font-size: 1rem;
-  margin-bottom: 20px;
-}
-
-.contact-info a {
-  color: #ff6a00;
-  text-decoration: none;
-}
-
-.contact-info a:hover {
-  text-decoration: underline;
-}
-
-/* Footer Links Columns */
 .footer-links {
-  display: flex;
-  flex: 2;
-  justify-content: space-between;
-  gap: 40px;
-  flex-wrap: wrap;
-}
-
-.footer-column {
-  flex: 1;
-  max-width: 200px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 12.5rem), 1fr));
+  gap: calc(var(--spacing-unit) * 2.5);
 }
 
 .footer-column h4 {
-  font-size: 1.2rem;
-  margin-bottom: 15px;
+  margin-bottom: calc(var(--spacing-unit));
+  font-weight: 700;
   color: #08584B;
 }
 
 .footer-column ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  list-style: disc; /* Ensure standard dots */
+  padding-left: 20px; /* Align bullets properly */
 }
 
 .footer-column ul li {
-  margin-bottom: 10px;
+  margin-bottom: calc(var(--spacing-unit) * 0.625);
 }
 
 .footer-column ul li a {
-  color: #333;
   text-decoration: none;
-  font-size: 1rem;
+  color: var(--text-color);
 }
 
-.footer-column ul li a:hover {
-  text-decoration: underline;
-}
-
-/* New to Thizo Column Adjustment */
-.new-to-thizo {
-  margin-left: 1.5in; /* Remove or adjust if unnecessary */
-}
-
-/* Footer Bottom Section */
 .footer-bottom {
-    border-top: 1px solid #e0e0e0;
-    padding: 20px 0;
-    margin-top: 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 0.9rem;
+  display: flex; /* Use flexbox for alignment */
+  justify-content: space-between; /* Distribute space between copyright and links */
+  align-items: center; /* Vertically align items */
+  font-size: 0.875rem; /* Match the font size of the copyright text */
+  color: #555; /* Maintain consistent color */
+  gap: 0; /* Remove wrapping gap */
+  padding: 0 30px; /* Add some padding for spacing inside */
 }
 
 .footer-bottom p {
-  margin: 10px 0; /* Add margin to separate each item */
-  text-align: center; /* Center align the text */
-  color: #333;
+  margin: 0;
+  font-size: inherit; /* Ensure font size consistency */
 }
 
 .legal-links {
-  display: flex;
-  justify-content: center; /* Center the links */
-  gap: 20px;
+  display: flex; /* Use flexbox for inline links */
+  flex-wrap: nowrap; /* Prevent wrapping of links */
+  gap: 20px; /* Add spacing between links */
+  justify-content: flex-end; /* Push links to the right */
+  margin: 0; /* Reset any margin that might cause misalignment */
+  white-space: nowrap; /* Prevent links from wrapping to the next line */
 }
 
 .legal-links a {
-  color: #333;
-  text-decoration: none;
+  font-family: 'Montserrat', sans-serif; /* Match the desired font */
+  font-weight: 500; /* Medium weight for clarity */
+  font-size: inherit; /* Match the footer's font size */
+  text-decoration: none; /* Remove underlines */
+  color: #555; /* Ensure color matches copyright text */
 }
 
 .legal-links a:hover {
-  text-decoration: underline;
+  text-decoration: underline; /* Add hover effect for clarity */
 }
 
-/* Responsive Footer Styles */
-@media (max-width: 768px) {
-  .footer-container {
-    flex-direction: column;
-    gap: 20px;
-  }
+/* Remove "+" signs from navigation links */
+.nav-links ul li::before {
+  content: none; /* Removes any "+" or other symbols */
+}
 
-  .footer-description {
-    max-width: 100%; /* Ensure full width for mobile */
-  }
+/* Remove "+" signs from popular articles */
+.popular-articles ul li::before {
+  content: none; /* Removes any "+" or other symbols */
+}
 
-  .footer-links {
-    flex-direction: column; /* Stack links vertically */
-    gap: 20px;
-  }
-
-  .footer-column {
-    max-width: 100%;
-  }
-
-  .footer-bottom {
-    flex-direction: column;
-    text-align: center;
-    gap: 10px;
-  }
-
-  .new-to-thizo {
-    margin-left: 0px; /* Remove margin for mobile view */
-  }
+/* General rule to prevent "+" signs globally (if needed) */
+ul li::before {
+  content: none; /* Safeguard: removes any default content for list items */
 }

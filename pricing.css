@@ -279,17 +279,18 @@ h3 {
 
 
 /* Footer Section */
+/* Footer */
 .footer {
     background-color: var(--background-light);
-    padding: calc(var(--spacing-unit) * 5) var(--spacing-unit); /* Updated padding for better spacing */
+    padding: calc(var(--spacing-unit) * 5) var(--spacing-unit);
 }
 
 .footer-container {
-    max-width: 75rem; /* Constrain container width */
+    max-width: 75rem;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 18.75rem), 1fr)); /* Updated grid column widths */
-    gap: calc(var(--spacing-unit) * 2.5); /* Increased spacing for readability */
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 18.75rem), 1fr));
+    gap: calc(var(--spacing-unit) * 2.5);
 }
 
 .footer-logo {
@@ -315,8 +316,8 @@ h3 {
 
 .footer-links {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 12.5rem), 1fr)); /* Updated grid column widths */
-    gap: calc(var(--spacing-unit) * 2.5); /* Increased gap for readability */
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 12.5rem), 1fr));
+    gap: calc(var(--spacing-unit) * 2.5);
 }
 
 .footer-column h4 {
@@ -337,32 +338,36 @@ h3 {
 }
 
 .footer-bottom {
-    max-width: 75rem; /* Ensure consistent width like the container */
-    margin: calc(var(--spacing-unit) * 2.5) auto 0; /* Add space around */
-    padding-top: calc(var(--spacing-unit) * 1.25); /* Padding for separation */
-    border-top: 0.0625rem solid rgba(0, 0, 0, 0.1); /* Top border for clarity */
+    max-width: 75rem;
+    margin: calc(var(--spacing-unit) * 2.5) auto 0;
+    padding-top: calc(var(--spacing-unit) * 1.25);
+    border-top: 0.0625rem solid rgba(0, 0, 0, 0.1);
     display: flex;
-    justify-content: center; /* Center the text and links */
+    justify-content: space-between;
     flex-wrap: wrap;
-    text-align: center; /* Ensure proper alignment */
     gap: var(--spacing-unit);
 }
 
 .legal-links {
     display: flex;
-    justify-content: center; /* Center align the links */
+    gap: calc(var(--spacing-unit) * 1.25);
     flex-wrap: wrap;
-    gap: calc(var(--spacing-unit) * 1.25); /* Increased gap for readability */
 }
 
 /* Responsive Design */
 @media (max-width: 48rem) {
     .navbar .container {
         flex-direction: column;
+        gap: calc(var(--spacing-unit));
     }
 
     .nav-links ul {
         flex-direction: column;
+        align-items: center;
+    }
+
+    .support-container {
+        grid-template-columns: 1fr;
     }
 
     .footer-container {
@@ -373,6 +378,11 @@ h3 {
         flex-direction: column;
         align-items: center;
         text-align: center;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
     }
 }
 
