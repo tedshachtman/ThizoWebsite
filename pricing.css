@@ -144,25 +144,24 @@ h3 {
 /* Foreground Image Styling */
 .hero-image {
     position: absolute;
-    right: 20%; /* Adjusted to 20% for more padding on the right */
+    right: 20%;
     top: 50%;
     transform: translateY(-50%);
     z-index: 2;
-    max-width: 400px; /* Reduced width by 50px */
+    max-width: 400px;
     border-radius: 10px;
-    
 }
 
 /* Custom Quote Section */
 .custom-quote {
     padding: var(--spacing-xl) min(5%, var(--spacing-lg));
     background-color: var(--background-light);
-    text-align: center; /* Centers all text inside the section */
-}
-.custom-quote h3 {
-    color: black; /* Sets the text color of h3 elements to black */
+    text-align: center;
 }
 
+.custom-quote h3 {
+    color: black;
+}
 
 .company-types {
     display: grid;
@@ -178,10 +177,10 @@ h3 {
     background-color: #fff;
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
-    display: flex; /* Use flexbox for alignment */
-    flex-direction: column; /* Stack image and text vertically */
-    justify-content: center; /* Centers content vertically */
-    align-items: center; /* Centers content horizontally */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     gap: var(--spacing-sm);
     transition: transform 0.3s, box-shadow 0.3s;
@@ -191,7 +190,34 @@ h3 {
     width: min(3.125rem, 15vw);
     height: auto;
     aspect-ratio: 1;
-    object-fit: contain; /* Ensures the image maintains its aspect ratio */
+    object-fit: contain;
+}
+
+/* Pricing Information Section */
+.pricing-section {
+    display: flex;
+    align-items: center;
+    gap: 300px; /* Spacing between text and image */
+    padding: var(--spacing-lg);
+    max-width: 100%; /* Ensure full width of the page */
+    margin: 0 auto; /* Center horizontally */
+    box-sizing: border-box; /* Includes padding in width calculation */
+}
+
+.pricing-text {
+    flex: 1;
+    text-align: left;
+}
+
+.pricing-image {
+    flex: 1;
+    text-align: center; /* Ensures image is centered */
+}
+
+.pricing-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--border-radius);
 }
 
 
@@ -201,79 +227,144 @@ h3 {
     background-color: var(--background-light);
 }
 
+.features h2, .features p {
+    text-align: center; /* Center align title and subtitle */
+    margin: 0 auto; /* Ensure consistent spacing */
+    max-width: var(--container-max-width); /* Limit the width for readability */
+}
+
+.features p {
+    margin-bottom: 30px; /* Add 15px spacing below subtitle */
+}
+
 .features-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr)); /* Responsive card layout */
     gap: var(--spacing-lg);
     width: min(100%, var(--container-max-width));
     margin-inline: auto;
 }
 
 .feature-item {
+    height: 20rem; /* Fixed height for uniformity */
+    width: 100%;
+    max-width: 18rem; /* Constrain card width */
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center align content horizontally */
+    justify-content: space-between; /* Distribute content evenly */
+    text-align: center;
     background-color: #fff;
     padding: var(--spacing-md);
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
-    display: grid;
-    gap: var(--spacing-sm);
-    aspect-ratio: 1;
-    place-content: center;
-    text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
 }
+
+.feature-item img {
+    max-width: 5rem; /* Set a consistent maximum size for icons */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: var(--spacing-sm); /* Add spacing below the icon */
+}
+
+.feature-item h3 {
+    font-size: 1.25rem; /* Title size */
+    margin: 0; /* Remove extra spacing */
+}
+
+.feature-item p {
+    font-size: 0.875rem; /* Paragraph size */
+    margin: 0.5rem 0; /* Add consistent spacing */
+}
+
 
 /* Footer Section */
 .footer {
     background-color: var(--background-light);
-    padding: var(--spacing-xl) var(--spacing-sm);
+    padding: calc(var(--spacing-unit) * 5) var(--spacing-unit); /* Updated padding for better spacing */
 }
 
 .footer-container {
+    max-width: 75rem; /* Constrain container width */
+    margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
-    gap: var(--spacing-xl);
-    width: min(100%, var(--container-max-width));
-    margin-inline: auto;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 18.75rem), 1fr)); /* Updated grid column widths */
+    gap: calc(var(--spacing-unit) * 2.5); /* Increased spacing for readability */
+}
+
+.footer-logo {
+    width: 9.375rem;
+    height: auto;
+    margin-bottom: calc(var(--spacing-unit) * 1.25);
+}
+
+.footer-description {
+    max-width: 25rem;
+}
+
+.social-links {
+    display: flex;
+    gap: calc(var(--spacing-unit) * 0.625);
+    margin: calc(var(--spacing-unit) * 1.25) 0;
+}
+
+.social-links img {
+    width: 1.875rem;
+    height: 1.875rem;
 }
 
 .footer-links {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 12rem), 1fr));
-    gap: var(--spacing-lg);
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 12.5rem), 1fr)); /* Updated grid column widths */
+    gap: calc(var(--spacing-unit) * 2.5); /* Increased gap for readability */
+}
+
+.footer-column h4 {
+    margin-bottom: calc(var(--spacing-unit));
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: calc(var(--spacing-unit) * 0.625);
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: var(--text-color);
 }
 
 .footer-bottom {
+    max-width: 75rem; /* Ensure consistent width like the container */
+    margin: calc(var(--spacing-unit) * 2.5) auto 0; /* Add space around */
+    padding-top: calc(var(--spacing-unit) * 1.25); /* Padding for separation */
+    border-top: 0.0625rem solid rgba(0, 0, 0, 0.1); /* Top border for clarity */
     display: flex;
+    justify-content: center; /* Center the text and links */
     flex-wrap: wrap;
-    justify-content: space-between;
-    gap: var(--spacing-md);
-    padding-block: var(--spacing-md);
-    margin-top: var(--spacing-xl);
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    text-align: center; /* Ensure proper alignment */
+    gap: var(--spacing-unit);
 }
 
 .legal-links {
     display: flex;
+    justify-content: center; /* Center align the links */
     flex-wrap: wrap;
-    gap: var(--spacing-md);
+    gap: calc(var(--spacing-unit) * 1.25); /* Increased gap for readability */
 }
 
 /* Responsive Design */
-@container (max-width: 48rem) {
-    .hero-content {
-        grid-template-columns: 1fr;
-    }
-}
-
 @media (max-width: 48rem) {
     .navbar .container {
         flex-direction: column;
     }
-    
+
     .nav-links ul {
         flex-direction: column;
     }
-    
+
     .footer-container {
         grid-template-columns: 1fr;
     }
