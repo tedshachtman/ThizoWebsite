@@ -1,0 +1,311 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Navbar Section */
+/* Navigation links */
+nav a, .nav-link {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500; /* Medium weight for clarity */
+    text-transform: uppercase; /* Optional: make links uppercase */
+    color: #3a3a46; /* Customize color */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Button styles */
+.button, .btn {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500; /* Medium weight for buttons */
+    color: #fff;
+    background-color: #08584B; /* Button color */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.button:hover, .btn:hover {
+    background-color: #028f67; /* Lighter on hover */
+}
+
+.navbar {
+    background-color: #ffffff;
+    padding: 20px 0;
+}
+
+.logo img {
+    width: 120px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: center;
+}
+
+.nav-links ul {
+    list-style: none;
+    display: inline-flex;
+    gap: 30px;
+    margin: 0;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav-links ul li a:hover {
+    color: #028f67;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.cta-buttons .button {
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s;
+}
+
+.demo-button {
+    background-color: #08584B;
+    color: #fff;
+}
+
+.demo-button:hover {
+    background-color: #028f67;
+}
+
+.login-button {
+    background-color: #08584B;
+    color: #fff;
+}
+
+.login-button:hover {
+    background-color: #028f67;
+}
+
+/* Getting Started Section */
+.getting-started {
+    padding: 40px 60px;
+    background-color: #e8e8e8; /* Background color */
+    text-align: left;
+}
+
+.getting-started h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: #08584B;
+    margin-bottom: 30px;
+}
+
+.getting-started-grid {
+    display: grid;
+    grid-template-columns: auto 1fr; /* Icons column auto, content fills remaining */
+    gap: 20px 30px; /* Row and column gaps */
+    max-width: 800px;
+    margin: 0 auto; /* Center the grid */
+    align-items: start; /* Align items to the top */
+}
+
+.getting-started-item {
+    display: contents; /* Ensures child elements take up the grid's defined space */
+}
+
+.getting-started-item img {
+    grid-column: 1; /* Keep the image in the first column */
+    grid-row: span 1; /* Make sure each image is in its own row */
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.getting-started-content {
+    grid-column: 2; /* Content spans the second column */
+    grid-row: span 1; /* Ensure alignment with its respective image */
+}
+
+.getting-started-content h3 {
+    font-size: 1.2rem;
+    margin: 0 0 10px;
+    color: #3a3a46;
+}
+
+.getting-started-content p {
+    font-size: 0.9rem;
+    margin: 0;
+    color: #3a3a46;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .getting-started-grid {
+        grid-template-columns: 1fr; /* Stack icons and text vertically */
+    }
+
+    .getting-started-item img {
+        grid-column: 1; /* Ensure image remains at the top in single-column view */
+    }
+
+    .getting-started-content {
+        grid-column: 1; /* Text spans below the image in single-column view */
+    }
+}
+/* Privacy Section */
+.privacy-section {
+    text-align: center;
+    padding: 60px 40px;
+    background-color: #08584B; /* Dark green background */
+    color: #ffffff; /* White text */
+  }
+  
+  .privacy-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #ffffff; /* White heading */
+  }
+  
+  .privacy-section p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    color: #ffffff; /* White paragraph */
+  }
+  
+  .privacy-section .contact-us {
+    font-size: 1.1em;
+    color: #028f67; /* Set to #028f67 */
+    text-decoration: none; /* Remove underline initially */
+    cursor: pointer;
+  }
+  
+  .privacy-section .contact-us:hover,
+  .privacy-section .contact-us:focus {
+    text-decoration: underline; /* Underline on hover and focus */
+    color: #028f67; /* Keep the color consistent on hover */
+  }
+/* Footer Wrapper */
+.footer-wrapper {
+    background-color: #e8e8e8; /* Background color for the area around the footer */
+    padding: 40px 0; /* Adds space above and below the footer */
+}
+
+/* Footer Section */
+.footer {
+    background-color: var(--background-light); /* Main footer background */
+    padding: 40px 20px; /* Space inside the footer */
+}
+
+.footer-container {
+    max-width: 75rem;
+    margin: 0 auto; /* Center the content */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr)); /* Responsive columns */
+    gap: 40px; /* Space between columns */
+}
+
+.footer-logo {
+    width: 9.375rem;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.footer-description {
+    max-width: 25rem; /* Limit description width for better readability */
+}
+
+.social-links {
+    display: flex;
+    gap: 10px; /* Space between social icons */
+    margin: 20px 0;
+}
+
+.social-links img {
+    width: 30px; /* Icon size */
+    height: 30px;
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr)); /* Dynamic layout for links */
+    gap: 20px;
+}
+
+.footer-column h4 {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 5px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: #028f67; /* Add hover effect for links */
+}
+
+.footer-bottom {
+    max-width: 75rem;
+    margin: 20px auto 0; /* Space above and center alignment */
+    margin-right: 40px auto 0; /* Space above and center alignment */
+    padding-top: 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1); /* Subtle line to separate sections */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Adjust layout for smaller screens */
+    gap: 10px;
+}
+
+.legal-links {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        grid-template-columns: 1fr; /* Single column layout */
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}

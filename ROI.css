@@ -1,0 +1,722 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Navbar Section */
+/* Navigation links */
+nav a, .nav-link {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500; /* Medium weight for clarity */
+    text-transform: uppercase; /* Optional: make links uppercase */
+    color: #3a3a46; /* Customize color */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Button styles */
+.button, .btn {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500; /* Medium weight for buttons */
+    color: #fff;
+    background-color: #08584B; /* Button color */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.button:hover, .btn:hover {
+    background-color: #028f67; /* Lighter on hover */
+}
+
+.navbar {
+    background-color: #ffffff;
+    padding: 20px 0;
+}
+
+.logo img {
+    width: 120px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: center;
+}
+
+.nav-links ul {
+    list-style: none;
+    display: inline-flex;
+    gap: 30px;
+    margin: 0;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav-links ul li a:hover {
+    color: #028f67;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.cta-buttons .button {
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s;
+}
+
+.demo-button {
+    background-color: #08584B;
+    color: #fff;
+}
+
+.demo-button:hover {
+    background-color: #028f67;
+}
+
+.login-button {
+    background-color: #08584B;
+    color: #fff;
+}
+
+.login-button:hover {
+    background-color: #028f67;
+}
+
+/* Header */
+.header {
+    background-color: #f4f4f4;
+    padding: 40px 20px;
+    text-align: center; /* Center all content inside */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+}
+
+/* Roi Section */
+.roi-section {
+    text-align: center;
+    padding: 60px 40px;
+    background-color: #e8e8e8; /* Background color */
+  }
+  
+  .roi-header h2 {
+    font-size: 2.5em;
+    color: #08584B; /* Black for the heading */
+    margin-bottom: 10px;
+  }
+  
+  .roi-header p {
+    font-size: 1.2em;
+    color: #08584B; /* Cadet Gray for subheading */
+    margin-bottom: 40px;
+  }
+  
+  .roi-stats {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+  }
+  
+  .stat-item {
+    width: 30%;
+    text-align: center;
+  }
+  
+  .stat-item h3 {
+    font-size: 3em;
+    color: #3a3a46; /* Black for the percentage stats */
+    margin-bottom: 10px;
+  }
+  
+  .stat-item p {
+    font-size: 1.1em;
+    color: #3a3a46; /* Cadet Gray for smaller text */
+    margin-bottom: 10px;
+  }
+  
+  .stat-item strong {
+    color: #000000; /* Black for emphasized text */
+  }
+  
+  .roi-button {
+    margin-top: 30px;
+  }
+  
+  .roi-button p {
+    font-size: 0.9em;
+    color: #3a3a46; /* Cadet Gray for footnote */
+    margin-top: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .roi-stats {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .stat-item {
+      width: 80%;
+      margin-bottom: 30px;
+    }
+  }
+/* Main Content */
+/* Platform Section 1*/
+.platform-section {
+    padding: 100px 5%; /* Keep original padding */
+    background-color: #ffffff;
+  }
+  
+  .platform-content {
+    margin-bottom: 80px; /* Add 80px space below the content */
+  }
+  
+  /* Content alignment and gap adjustments */
+  .platform-content {
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  
+  /* Remove underline from all text in .platform-section */
+  .platform-section a,
+  .platform-section h2,
+  .platform-section p,
+  .platform-section li {
+    text-decoration: none; /* Remove underlines from all elements */
+  }
+  
+  /* Left side image styling */
+  .platform-left img {
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    margin-right: 80px;
+    margin-left: -1.5in; /* Moves the image 1.5 inches to the left */
+  }
+  
+  .platform-image img {
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Right side text styling */
+  .platform-right {
+    flex: 1 1 45%; /* Makes the text section take 45% of the available width */
+    max-width: 600px;
+  }
+  
+  .platform-right h2 {
+    font-size: 2.5rem;
+    color: #08584B;
+    margin-bottom: 20px;
+    text-decoration: none; /* Ensure headings are not underlined */
+  }
+  /* Styling for the specific subtitles */
+  .platform-right h3 {
+    color: #08584B; /* Set color to the desired green shade */
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    text-decoration: none;
+  }
+  .platform-right p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-decoration: none; /* Ensure paragraphs are not underlined */
+  }
+  
+  .platform-right ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .platform-right li {
+    display: flex; /* Ensure the list item holds icon and text inline */
+    align-items: center; /* Vertically center-align icon and text */
+    margin-bottom: 20px; /* Space below each item */
+    text-decoration: none; /* Ensure list items are not underlined */
+  }
+  
+  .platform-right li .checkmark {
+    color: #F47801; /* Style the checkmarks */
+    font-size: 1.5rem; /* Adjusted for better visibility */
+    margin-right: 10px;
+  }
+  
+  /* Checkmark styling within features */
+  .platform-section .platform-features .feature {
+    display: flex;
+    align-items: center; /* Align icon and text vertically */
+    gap: 10px; /* Space between icon and text */
+  }
+  
+  .platform-section .platform-features .feature-icon {
+    font-size: 1.5rem; /* Adjust checkmark size */
+    color: #F47801; /* Update checkmark color */
+    margin-top: 0; /* Adjust as needed to align with text */
+    display: flex; /* Ensure icon stays with the text */
+    align-items: center; /* Center aligns vertically with text */
+  }
+  
+  .platform-right strong {
+    color: #000;
+    font-size: 1.2rem;
+    text-decoration: none; /* Ensure strong text is not underlined */
+  }
+  
+  /* CTA Link styling */
+  .cta-link {
+    color: #F47801; /* Matches the checkmarks' color */
+    text-decoration: none;
+    font-weight: bold; /* Optional for emphasis */
+  }
+  
+  .cta-link:hover {
+    color: #1C80A0; /* Adjust to preferred hover color */
+    text-decoration: underline; /* Optional hover effect */
+  }
+  
+  /* Media queries for smaller screens */
+  @media (max-width: 768px) {
+    .platform-content {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .platform-left, .platform-right {
+      flex: 1 1 100%; /* Full width for both sides */
+      max-width: none;
+    }
+    
+    .platform-right h2 {
+      font-size: 2rem;
+    }
+    
+    .platform-right p, .platform-right strong {
+      font-size: 1rem;
+    }
+    
+    .cta-button {
+      padding: 10px 16px;
+    }
+
+/* Platform Section 2*/
+.platform-section {
+    padding: 100px 5%; /* Keep original padding */
+    background-color: #ffffff;
+  }
+  
+  .platform-content {
+    margin-bottom: 80px; /* Add 80px space below the content */
+  }
+  
+  /* Content alignment and gap adjustments */
+  .platform-content {
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  
+  /* Remove underline from all text in .platform-section */
+  .platform-section a,
+  .platform-section h2,
+  .platform-section p,
+  .platform-section li {
+    text-decoration: none; /* Remove underlines from all elements */
+  }
+  
+  /* Left side text styling */
+  .platform-left {
+    flex: 1 1 45%; /* Makes the text section take 45% of the available width */
+    max-width: 600px;
+  }
+  
+  .platform-left h2 {
+    font-size: 2.5rem;
+    color: #08584B;
+    margin-bottom: 20px;
+    text-decoration: none; /* Ensure headings are not underlined */
+  }
+  /* Styling for the specific subtitles */
+  .platform-left h3 {
+    color: #08584B; /* Set color to the desired green shade */
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    text-decoration: none;
+  }
+  .platform-left p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-decoration: none; /* Ensure paragraphs are not underlined */
+  }
+  
+  .platform-left ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .platform-left li {
+    display: flex; /* Ensure the list item holds icon and text inline */
+    align-items: center; /* Vertically center-align icon and text */
+    margin-bottom: 20px; /* Space below each item */
+    text-decoration: none; /* Ensure list items are not underlined */
+  }
+  
+  .platform-left li .checkmark {
+    color: #F47801; /* Style the checkmarks */
+    font-size: 1.5rem; /* Adjusted for better visibility */
+    margin-left: 10px;
+  }
+  
+  /* Checkmark styling within features */
+  .platform-section .platform-features .feature {
+    display: flex;
+    align-items: center; /* Align icon and text vertically */
+    gap: 10px; /* Space between icon and text */
+  }
+  
+  .platform-section .platform-features .feature-icon {
+    font-size: 1.5rem; /* Adjust checkmark size */
+    color: #F47801; /* Update checkmark color */
+    margin-top: 0; /* Adjust as needed to align with text */
+    display: flex; /* Ensure icon stays with the text */
+    align-items: center; /* Center aligns vertically with text */
+  }
+  
+  .platform-left strong {
+    color: #000;
+    font-size: 1.2rem;
+    text-decoration: none; /* Ensure strong text is not underlined */
+  }
+  
+  /* CTA Link styling */
+  .cta-link {
+    color: #F47801; /* Matches the checkmarks' color */
+    text-decoration: none;
+    font-weight: bold; /* Optional for emphasis */
+  }
+  
+  .cta-link:hover {
+    color: #1C80A0; /* Adjust to preferred hover color */
+    text-decoration: underline; /* Optional hover effect */
+  }
+  
+  /* Media queries for smaller screens */
+  @media (max-width: 768px) {
+    .platform-content {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .platform-left, .platform-right {
+      flex: 1 1 100%; /* Full width for both sides */
+      max-width: none;
+    }
+    
+    .platform-right h2 {
+      font-size: 2rem;
+    }
+    
+    .platform-right p, .platform-right strong {
+      font-size: 1rem;
+    }
+    
+    .cta-button {
+      padding: 10px 16px;
+    }
+  
+  /* Right side image styling */
+  .platform-right img {
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    margin-right: 80px;
+    margin-right: -1.5in; /* Moves the image 1.5 inches to the left */
+  }
+  
+  .platform-image img {
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+/* Platform Section 3*/
+.platform-section {
+    padding: 100px 5%; /* Keep original padding */
+    background-color: #ffffff;
+  }
+  
+  .platform-content {
+    margin-bottom: 80px; /* Add 80px space below the content */
+  }
+  
+  /* Content alignment and gap adjustments */
+  .platform-content {
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  
+  /* Remove underline from all text in .platform-section */
+  .platform-section a,
+  .platform-section h2,
+  .platform-section p,
+  .platform-section li {
+    text-decoration: none; /* Remove underlines from all elements */
+  }
+  
+  /* Left side image styling */
+  .platform-left img {
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    margin-right: 80px;
+    margin-left: -1.5in; /* Moves the image 1.5 inches to the left */
+  }
+  
+  .platform-image img {
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Right side text styling */
+  .platform-right {
+    flex: 1 1 45%; /* Makes the text section take 45% of the available width */
+    max-width: 600px;
+  }
+  
+  .platform-right h2 {
+    font-size: 2.5rem;
+    color: #08584B;
+    margin-bottom: 20px;
+    text-decoration: none; /* Ensure headings are not underlined */
+  }
+  /* Styling for the specific subtitles */
+  .platform-right h3 {
+    color: #08584B; /* Set color to the desired green shade */
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    text-decoration: none;
+  }
+  .platform-right p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-decoration: none; /* Ensure paragraphs are not underlined */
+  }
+  
+  .platform-right ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .platform-right li {
+    display: flex; /* Ensure the list item holds icon and text inline */
+    align-items: center; /* Vertically center-align icon and text */
+    margin-bottom: 20px; /* Space below each item */
+    text-decoration: none; /* Ensure list items are not underlined */
+  }
+  
+  .platform-right li .checkmark {
+    color: #F47801; /* Style the checkmarks */
+    font-size: 1.5rem; /* Adjusted for better visibility */
+    margin-right: 10px;
+  }
+  
+  /* Checkmark styling within features */
+  .platform-section .platform-features .feature {
+    display: flex;
+    align-items: center; /* Align icon and text vertically */
+    gap: 10px; /* Space between icon and text */
+  }
+  
+  .platform-section .platform-features .feature-icon {
+    font-size: 1.5rem; /* Adjust checkmark size */
+    color: #F47801; /* Update checkmark color */
+    margin-top: 0; /* Adjust as needed to align with text */
+    display: flex; /* Ensure icon stays with the text */
+    align-items: center; /* Center aligns vertically with text */
+  }
+  
+  .platform-right strong {
+    color: #000;
+    font-size: 1.2rem;
+    text-decoration: none; /* Ensure strong text is not underlined */
+  }
+  
+  /* CTA Link styling */
+  .cta-link {
+    color: #F47801; /* Matches the checkmarks' color */
+    text-decoration: none;
+    font-weight: bold; /* Optional for emphasis */
+  }
+  
+  .cta-link:hover {
+    color: #1C80A0; /* Adjust to preferred hover color */
+    text-decoration: underline; /* Optional hover effect */
+  }
+  
+  /* Media queries for smaller screens */
+  @media (max-width: 768px) {
+    .platform-content {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .platform-left, .platform-right {
+      flex: 1 1 100%; /* Full width for both sides */
+      max-width: none;
+    }
+    
+    .platform-right h2 {
+      font-size: 2rem;
+    }
+    
+    .platform-right p, .platform-right strong {
+      font-size: 1rem;
+    }
+    
+    .cta-button {
+      padding: 10px 16px;
+    }
+/* Footer Wrapper */
+.footer-wrapper {
+    background-color: #e8e8e8; /* Background color for the area around the footer */
+    padding: 40px 0; /* Adds space above and below the footer */
+}
+
+/* Footer Section */
+.footer {
+    background-color: var(--background-light); /* Main footer background */
+    padding: 40px 20px; /* Space inside the footer */
+}
+
+.footer-container {
+    max-width: 75rem;
+    margin: 0 auto; /* Center the content */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr)); /* Responsive columns */
+    gap: 40px; /* Space between columns */
+}
+
+.footer-logo {
+    width: 9.375rem;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.footer-description {
+    max-width: 25rem; /* Limit description width for better readability */
+}
+
+.social-links {
+    display: flex;
+    gap: 10px; /* Space between social icons */
+    margin: 20px 0;
+}
+
+.social-links img {
+    width: 30px; /* Icon size */
+    height: 30px;
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr)); /* Dynamic layout for links */
+    gap: 20px;
+}
+
+.footer-column h4 {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 5px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: #028f67; /* Add hover effect for links */
+}
+
+.footer-bottom {
+    max-width: 75rem;
+    margin: 20px auto 0; /* Space above and center alignment */
+    padding-top: 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1); /* Subtle line to separate sections */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Adjust layout for smaller screens */
+    gap: 10px;
+}
+
+.legal-links {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        grid-template-columns: 1fr; /* Single column layout */
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
