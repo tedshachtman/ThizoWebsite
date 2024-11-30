@@ -414,3 +414,6 @@ body {
 ul li::before {
   content: none; /* Safeguard: removes any default content for list items */
 }
+a {
+    text-decoration: none; /* Removes the underline from all links */
+}
