@@ -22,19 +22,23 @@ companyTypeCards.forEach(card => {
 
 // Function to update localStorage with the currently selected types
 function updateSelectedTypes() {
-    // Get all selected cards and store their data values in an array
     const selectedTypes = Array.from(document.querySelectorAll('.company-type.selected')).map(card => card.dataset.value);
-    localStorage.setItem('selectedTypes', JSON.stringify(selectedTypes)); // Save to localStorage
+    localStorage.setItem('selectedTypes', JSON.stringify(selectedTypes));
 }
 
 // Event listener for "Next" button to check selection and navigate
 nextButton.addEventListener('click', (event) => {
     const selectedTypes = document.querySelectorAll('.company-type.selected');
     if (selectedTypes.length === 0) {
-        event.preventDefault(); // Prevent navigation if no cards are selected
+        event.preventDefault();
         alert('Please select at least one option.');
     } else {
-        // Navigate to the pricing-practitioners page
-        window.location.href = "../pricing-practitioners.html"; // Make sure this path is correct
+        console.log("Navigating to: pricing-practitioners.html"); // Debug
+        window.location.href = "pricing-practitioners.html"; // Adjust path if needed
     }
+});
+companyTypeCards.forEach(card => {
+    card.addEventListener('click', () => {
+        console.log("Card clicked!"); // Log this to verify clicks
+    });
 });

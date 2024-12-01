@@ -112,6 +112,7 @@ nav a, .nav-link {
 /* Getting Started Section */
 .getting-started {
     padding: 40px 60px;
+    margin-left: 200px
     background-color: #ffffff; /* Background color */
     text-align: left;
 }
@@ -128,7 +129,7 @@ nav a, .nav-link {
     grid-template-columns: auto 1fr; /* Icons column auto, content fills remaining */
     gap: 20px 30px; /* Row and column gaps */
     max-width: 800px;
-    margin: 0 auto; /* Center the grid */
+    margin: 60 auto; /* Center the grid */
     align-items: start; /* Align items to the top */
 }
 
@@ -205,7 +206,7 @@ nav a, .nav-link {
   .privacy-section .contact-us:hover,
   .privacy-section .contact-us:focus {
     text-decoration: none; /* No underline on hover and focus */
-    color: #ed6b14; /* Keep the color consistent on hover */
+    color:#ed6b14; /* Keep the color consistent on hover */
   }
 /* Footer Wrapper */
 .footer-wrapper {

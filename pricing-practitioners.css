@@ -301,23 +301,29 @@ body, p, li, span, .body-text {
     grid-template-columns: repeat(auto-fit, minmax(min(100%, 12.5rem), 1fr));
     gap: calc(var(--spacing-unit) * 2.5);
 }
-
 .footer-column h4 {
-    margin-bottom: calc(var(--spacing-unit));
-}
-
-.footer-column ul {
-    list-style: none;
-}
-
-.footer-column ul li {
-    margin-bottom: calc(var(--spacing-unit) * 0.625);
-}
-
-.footer-column ul li a {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #08584B; /* Set titles to green */
+  }
+  
+  .footer-column ul {
+    list-style: none; /* Remove bullet points */
+    padding-left: 0; /* Remove padding to align items */
+  }
+  
+  .footer-column ul li {
+    margin-bottom: 5px;
+  }
+  
+  .footer-column ul li a {
     text-decoration: none;
-    color: var(--text-color);
-}
+    color: #000000; /* Set text links to black */
+  }
+  
+  .footer-column ul li a:hover {
+    color: #028f67; /* Optional: Keep hover effect */
+  }
 
 .footer-bottom {
     max-width: 75rem;
