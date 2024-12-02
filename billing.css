@@ -124,23 +124,22 @@ body, p, li, span, .body-text {
     gap: 20px; /* Space between cards */
     max-width: 800px; /* Restrict grid width */
     margin: 20px auto; /* Center the grid */
+    margin-right: 200px; 
     padding: 20px; /* Add padding around the grid */
     background-color: #e8e8e8; /* Optional: background to distinguish the grid area */
     border-radius: 10px; /* Rounded corners for the grid container */
 }
+
 .billing-section {
     background-color: #e8e8e8; /* Matches the footer background */
     padding: 40px 20px; /* Internal spacing */
-    margin: 0; /* Removes any margin that could create a gap */
+    margin: 0 auto; /* Removes any margin that could create a gap */
 }
 
 /* Individual Billing Cards */
 .billing-card {
     background-color: #ffffff;
-    margin-top: 20px;
-    margin-bottom; 20px;
-    margin-left: 100px; 
-    margin-right: 450px;
+    margin: 20px; /* Adds spacing around cards */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -198,142 +197,58 @@ body, p, li, span, .body-text {
     text-decoration: none; /* Ensure no underline appears on hover */
 }
 
-/* Button Styling */
-.button, .btn {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500; /* Medium weight for buttons */
-    color: #fff;
-    background-color: #08584B; /* Button color */
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    display: inline-block;
-}
-
-.button:hover, .btn:hover {
-    background-color: #028f67; /* Lighter on hover */
-}
-
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     .billing-grid {
-        grid-template-columns: 1fr; /* Single column for smaller screens
+        grid-template-columns: 1fr; /* Single column for smaller screens */
+        padding: 10px;
+    }
+
+    .sidebar {
+        position: relative;
+        width: 100%;
+        margin: 20px 0;
+    }
+}
 
 /* Footer Styles */
 /* Footer */
 .footer-wrapper {
     background-color: #e8e8e8; /* Ensure consistent background */
-    padding-top: 50px; /* Keep padding for footer content */
-    margin-top: 0px; /* Remove unnecessary top margin */
+    padding: 50px 0; /* Add 50px spacing on top and bottom of the footer */
+    margin: 0; /* Remove unnecessary margin */
 }
 
 .footer {
-  background-color: #e8e8e8; /* Retain footer background color */
-  padding: 60px 0 calc(var(--spacing-unit) * 5); /* Maintain footer padding */
-  border-radius: 25px; /* Optional: Keep the rounded footer design */
-  border: none;
+    background-color: #e8e8e8; /* Retain footer background color */
+    padding: 60px 0; /* Maintain footer padding */
+    border-radius: 25px; /* Optional: Keep the rounded footer design */
+    border: none;
 }
 
 .footer-container {
-  max-width: 75rem;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 18.75rem), 1fr));
-  gap: calc(var(--spacing-unit) * 2.5);
+    max-width: 75rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 18.75rem), 1fr));
+    gap: 20px;
 }
 
 .footer-logo {
-  width: 9.375rem;
-  height: auto;
-  margin-bottom: calc(var(--spacing-unit) * 1.25);
+    width: 150px;
+    margin-bottom: 20px;
 }
 
-.footer-description {
-  max-width: 25rem;
+.footer-links a {
+    text-decoration: none;
+    color: #555;
 }
 
-.social-links {
-  display: flex;
-  gap: calc(var(--spacing-unit) * 0.625);
-  margin: calc(var(--spacing-unit) * 1.25) 0;
+.footer-links a:hover {
+    text-decoration: underline;
 }
 
-.social-links img {
-  width: 1.875rem;
-  height: 1.875rem;
-}
-
-.footer-links {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 12.5rem), 1fr));
-  gap: calc(var(--spacing-unit) * 2.5);
-}
-
-.footer-column h4 {
-  margin-bottom: calc(var(--spacing-unit));
-}
-
-.footer-column ul {
-  list-style: disc; /* Ensure standard dots */
-  padding-left: 20px; /* Align bullets properly */
-}
-
-.footer-column ul li {
-  margin-bottom: calc(var(--spacing-unit) * 0.625);
-}
-
-.footer-column ul li a {
-  text-decoration: none;
-  color: var(--text-color);
-}
-
-.footer-bottom {
-  display: flex;
-  justify-content: space-between; /* Align links and text on the same plane */
-  align-items: center; /* Vertically align elements */
-  flex-wrap: wrap; /* Ensure proper alignment on smaller screens */
-  font-size: 0.875rem; /* Match the font size of the copyright text */
-  color: #555; /* Match the color for consistency */
-  gap: 10px; /* Add spacing for wrapping items */
-}
-
-.footer-bottom p {
-  margin: 0;
-  margin-left: 175px; /* Add 175px left margin */
-  font-size: inherit; /* Ensure font size consistency */
-}
-
-
-.legal-links {
-  display: flex;
-  gap: 20px; /* Add space between individual links */
-}
-
-.legal-links a {
-  font-family: 'Montserrat', sans-serif; /* Match the desired font */
-  font-weight: 500; /* Medium weight for clarity */
-  font-size: inherit; /* Match the footer's font size */
-  text-decoration: none; /* Remove underlines */
-  color: #555; /* Ensure color matches copyright text */
-}
-
-.legal-links a:hover {
-  text-decoration: underline; /* Add hover effect for clarity */
-}
-/* Remove "+" signs from navigation links */
-.nav-links ul li::before {
-  content: none; /* Removes any "+" or other symbols */
-}
-
-/* Remove "+" signs from popular articles */
-.popular-articles ul li::before {
-  content: none; /* Removes any "+" or other symbols */
-}
-
-/* General rule to prevent "+" signs globally (if needed) */
+/* Remove "+" signs globally */
 ul li::before {
-  content: none; /* Safeguard: removes any default content for list items */
-}
-a {
-    text-decoration: none; /* Removes the underline from all links */
+    content: none;
 }
