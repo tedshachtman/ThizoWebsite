@@ -1,0 +1,247 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Navbar Section */
+/* Navigation links */
+nav a, .nav-link {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500; /* Medium weight for clarity */
+    text-transform: uppercase; /* Optional: make links uppercase */
+    color: #3a3a46; /* Customize color */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Button styles */
+.button, .btn {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500; /* Medium weight for buttons */
+    color: #fff;
+    background-color: #08584B; /* Button color */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.button:hover, .btn:hover {
+    background-color: #028f67; /* Lighter on hover */
+}
+
+.navbar {
+    background-color: #ffffff;
+    padding: 20px 0;
+}
+
+.logo img {
+    width: 120px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: center;
+}
+
+.nav-links ul {
+    list-style: none;
+    display: inline-flex;
+    gap: 30px;
+    margin: 0;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav-links ul li a:hover {
+    color: #028f67;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.cta-buttons .button {
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s;
+}
+
+.demo-button {
+    background-color: #08584B;
+    color: #fff;
+}
+
+.demo-button:hover {
+    background-color: #028f67;
+}
+
+.login-button {
+    background-color: #08584B;
+    color: #fff;
+}
+
+.login-button:hover {
+    background-color: #028f67;
+}
+
+/* General body text */
+body, p, li, span, .body-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400; /* Regular weight for body content */
+    color: #555; /* Adjust color to suit your design */
+    line-height: 1.6; /* Add line height for readability */
+}
+body {
+    background-color: #e8e8e8; /* Sets the entire page background to grey */
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+}
+
+/* Legal Grid */
+.legal-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column grid */
+    gap: 20px; /* Space between cards */
+    margin: 40px auto; /* Center the grid vertically and horizontally */
+    max-width: 65%; /* Restrict width */
+    padding: 20px;
+}
+
+/* Individual Legal Cards */
+.legal-card {
+    display: block; /* Makes the entire card clickable */
+    padding: 20px;
+    margin: 0px; /* Grid gap handles spacing */
+    background-color: #fff;
+    border-radius: 10px; /* Smooth rounded edges */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center; 
+    text-decoration: none; /* Removes underline from link */
+    transition: transform 0.3s ease-in-out;
+}
+
+.legal-card:hover {
+    transform: translateY(-5px); /* Lift effect */
+}
+
+.legal-card h4 {
+    font-size: 1.3rem; /* Balanced title size */
+    color: #08584B; /* Apply green color */
+    margin-bottom: 10px;
+}
+
+.legal-card p {
+    font-size: 1rem; /* Readable size for descriptions */
+    color: #333; /* Neutral text color */
+}
+
+.support-sidebar {
+    position: fixed; /* Stick within the viewport */
+    top: 150px; /* Distance from the top when scrolling */
+    width: 300px; /* Fixed width for the sidebar */
+    background-color: #ffffff;
+    padding: 20px;
+    margin-right: 5%; /* Add space to the right */
+    margin-left: 5%; /* Align sidebar to the right */
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Link Styling for Contact My Rep */
+.button.contact-link {
+    background-color: #ed6b14; /* Update background color */
+    color: #ffffff; /* Text color */
+    border: 2px solid #ed6b14; /* Border color */
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button.contact-link:hover {
+    background-color: #ce6c15; /* Hover background color */
+    color: #ffffff; /* Text color on hover */
+    border: 2px solid #ce6c15; /* Hover border color */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .legal-grid {
+        max-width: 100%; /* Full width for smaller screens */
+        padding: 10px;
+    }
+
+    .support-sidebar {
+        margin: 20px auto; /* Center the sidebar below cards */
+        width: 100%; /* Full width for smaller screens */
+    }
+}
+
+/* Footer Styles */
+/* Footer */
+.footer-wrapper {
+    background-color: #e8e8e8; /* Ensure consistent background */
+    padding: 50px 0; /* Add 50px spacing on top and bottom of the footer */
+    margin: 0; /* Remove unnecessary margin */
+}
+
+.footer {
+    background-color: #e8e8e8; /* Retain footer background color */
+    padding: 60px 0; /* Maintain footer padding */
+    border-radius: 25px; /* Optional: Keep the rounded footer design */
+    border: none;
+}
+
+.footer-container {
+    max-width: 75rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 18.75rem), 1fr));
+    gap: 20px;
+}
+
+.footer-logo {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #555;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* Remove "+" signs globally */
+ul li::before {
+    content: none;
+}
