@@ -388,6 +388,17 @@ ul li::before {
 }
   
 /* Resources Section (Section 4) */
+body {
+    background-color: #e8e8e8; /* Set webpage background */
+}
+
+.resources-cards {
+    background-color: transparent; /* Ensure cards section inherits the webpage background */
+}
+
+.resource-card {
+    background-color: #fff; /* Keep cards' background white */
+}
 .resources-cards {
     display: flex;
     margin-top: 60px;
@@ -409,7 +420,6 @@ ul li::before {
     margin-bottom: 20px; /* Add space below cards */
     text-decoration: none; /* Remove the underline */
 }
-
 
 .resource-card img {
     width: 100%;
@@ -544,13 +554,14 @@ ul li::before {
   
   .footer-bottom p {
     margin: 0;
-    margin-left: 15px; /* Add 15px left margin */
+    margin-left: 10px; /* Add 15px left margin */
     font-size: inherit; /* Ensure font size consistency */
   }
   
   
   .legal-links {
     display: flex;
+    margin-right: 75px; 
     gap: 20px; /* Add space between individual links */
   }
   
