@@ -138,7 +138,7 @@ body {
 .privacy-section {
     text-align: center;
     padding: 60px 40px;
-    background-color: #08584B; /* Dark green background */
+    background-color: #d6b587; /* Honey background */
     color: #ffffff; /* White text */
   }
   
@@ -156,7 +156,7 @@ body {
   
   .privacy-section .contact-us {
     font-size: 1.1em;
-    color: #028f67; /* Set to #028f67 */
+    color: #08584B; /* Set to #028f67 */
     text-decoration: none; /* Remove underline initially */
     cursor: pointer;
   }

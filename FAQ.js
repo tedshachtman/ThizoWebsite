@@ -5,12 +5,17 @@ document.querySelectorAll('.faq-question').forEach(button => {
 
         // Toggle the current FAQ question
         button.setAttribute('aria-expanded', !isExpanded);
-        answer.style.display = isExpanded ? 'none' : 'block';
+
+        if (!isExpanded) {
+            answer.style.maxHeight = answer.scrollHeight + "px";
+        } else {
+            answer.style.maxHeight = null;
+        }
 
         // Collapse all other answers
         document.querySelectorAll('.faq-answer').forEach(otherAnswer => {
             if (otherAnswer !== answer) {
-                otherAnswer.style.display = 'none';
+                otherAnswer.style.maxHeight = null;
                 otherAnswer.previousElementSibling.setAttribute('aria-expanded', 'false');
             }
         });

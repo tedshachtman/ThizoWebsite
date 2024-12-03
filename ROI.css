@@ -124,7 +124,7 @@ nav a, .nav-link {
 .roi-section {
     text-align: center;
     padding: 60px 40px;
-    background-color: #e8e8e8; /* Background color */
+    background-color: #3a3a46; /* Background color */
   }
   
   .roi-header h2 {
@@ -221,7 +221,7 @@ nav a, .nav-link {
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     margin-right: 80px;
-    margin-left: -1.5in; /* Moves the image 1.5 inches to the left */
+    margin-left: .5in; /* Moves the image .5 inches to the right */
   }
   
   .platform-image img {
@@ -466,8 +466,8 @@ nav a, .nav-link {
     max-width: 100%;
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    margin-right: 80px;
-    margin-right: -1.5in; /* Moves the image 1.5 inches to the left */
+    margin-right: 10px;
+    margin-right: 3in; /* Moves the image 3 inches to the right */
   }
   
   .platform-image img {

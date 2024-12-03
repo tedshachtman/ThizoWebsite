@@ -82,11 +82,12 @@ body, p, li, span, .body-text {
     transition: max-height 0.3s ease, padding 0.3s ease;
     padding: 0 20px;
     font-size: 1rem;
-    color: #555;
+    color: #f47801;
 }
 
 .faq-answer p {
     margin: 15px 0;
+    color: #f47801;
 }
 
 /* FAQ Item Expanded */
@@ -190,9 +191,9 @@ a:hover {
   }
   
   .footer-column ul {
-    list-style: disc; /* Ensure standard dots */
-    padding-left: 20px; /* Align bullets properly */
-  }
+    list-style: none; /* Remove bullets */
+    padding-left: 0; /* Remove left indentation */
+}
   
   .footer-column ul li {
     margin-bottom: calc(var(--spacing-unit) * 0.625);
@@ -251,4 +252,3 @@ a:hover {
   ul li::before {
     content: none; /* Safeguard: removes any default content for list items */
   }
-  

@@ -109,77 +109,61 @@ nav a, .nav-link {
     background-color: #028f67;
 }
 
-/* Getting Started Section */
-.getting-started {
-    padding: 40px 60px;
-    margin-left: 200px;
-    background-color: #ffffff; /* Background color */
-    text-align: left;
+/* Product Updates Section */
+.careers {
+    display: block;
+    grid-template-columns: 1fr; /* Single column grid */
+    gap: 15px; /* Space between cards */
+    margin: 40px auto; /* Center the grid vertically and horizontally */
+    margin-left: 400px /* Move lext to right 400px */
+    max-width: 100%; /* Restrict width */
+    padding: 20px;
 }
 
-.getting-started h2 {
+.careers h2 {
+    width: 100%;
     font-size: 2rem;
     text-align: center;
     color: #08584B;
     margin-bottom: 30px;
 }
 
-.getting-started-grid {
-    display: grid;
-    grid-template-columns: auto 1fr; /* Icons column auto, content fills remaining */
-    gap: 20px 30px; /* Row and column gaps */
-    max-width: 800px;
-    margin: 60 auto; /* Center the grid */
-    align-items: start; /* Align items to the top */
+/* Individual Career Cards */
+.careers-card {
+    display: block; /* Keeps the card block-level */
+    padding: 0px;
+    margin: 0px; /* Grid gap handles spacing */
+    background-color: #fff;
+    border-radius: 10px; /* Smooth rounded edges */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: left; /* Align content to the left */
+    text-decoration: none; /* Removes underline from link */
+    transition: transform 0.3s ease-in-out;
 }
 
-.getting-started-item {
-    display: contents; /* Ensures child elements take up the grid's defined space */
+.careers-card:hover {
+    transform: translateY(-5px); /* Lift effect */
 }
 
-.getting-started-item img {
-    grid-column: 1; /* Keep the image in the first column */
-    grid-row: span 1; /* Make sure each image is in its own row */
-    width: 50px;
-    height: 50px;
-    object-fit: contain;
-}
-
-.getting-started-content {
-    grid-column: 2; /* Content spans the second column */
-    grid-row: span 1; /* Ensure alignment with its respective image */
-}
-
-.getting-started-content h3 {
+.careers-content h3 {
     font-size: 1.2rem;
     margin: 0 0 10px;
+    text-align: left; /* Ensure alignment for individual elements */
     color: #3a3a46;
 }
 
-.getting-started-content p {
+.careers-content p {
     font-size: 0.9rem;
-    margin: 0;
+    margin: 10px 0;
+    text-align: left; /* Ensure alignment for individual elements */
     color: #3a3a46;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .getting-started-grid {
-        grid-template-columns: 1fr; /* Stack icons and text vertically */
-    }
-
-    .getting-started-item img {
-        grid-column: 1; /* Ensure image remains at the top in single-column view */
-    }
-
-    .getting-started-content {
-        grid-column: 1; /* Text spans below the image in single-column view */
-    }
-}
 /* Privacy Section */
 .privacy-section {
     text-align: center;
     padding: 60px 40px;
+    margin-bottom: 0; /* Ensure no margin at the bottom */
     background-color: #08584B; /* Dark green background */
     color: #ffffff; /* White text */
   }
@@ -206,58 +190,70 @@ nav a, .nav-link {
   .privacy-section .contact-us:hover,
   .privacy-section .contact-us:focus {
     text-decoration: none; /* No underline on hover and focus */
-    color:#ed6b14; /* Keep the color consistent on hover */
+    color: #ed6b14; /* Keep the color consistent on hover */
   }
-/* Footer Wrapper */
+
+/* Footer */
 .footer-wrapper {
-    background-color: #e8e8e8; /* Background color for the area around the footer */
-    padding: 40px 0; /* Adds space above and below the footer */
+    background-color: #e8e8e8; /* Ensure consistent background */
+    padding: 0px 30px; /* Add 50px spacing on top and bottom of the footer */
+    margin-top: 0; /* Remove unnecessary margin */
 }
 
-/* Footer Section */
 .footer {
-    background-color: var(--background-light); /* Main footer background */
-    padding: 40px 20px; /* Space inside the footer */
+    margin-top: 0; /* Remove unnecessary margin */
+    background-color: #e8e8e8; /* Retain footer background color */
+    padding: 60px 0; /* Maintain footer padding */
+    border-radius: 25px; /* Optional: Keep the rounded footer design */
+    border: none;
 }
 
 .footer-container {
     max-width: 75rem;
-    margin: 0 auto; /* Center the content */
+    margin: 0 auto;
+    margin-bottom: 40px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr)); /* Responsive columns */
-    gap: 40px; /* Space between columns */
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 18.75rem), 1fr));
+    gap: 40px;
 }
 
 .footer-logo {
-    width: 9.375rem;
-    height: auto;
+    width: 150px;
     margin-bottom: 20px;
 }
 
 .footer-description {
-    max-width: 25rem; /* Limit description width for better readability */
+    max-width: 25rem; /* Restrict description width */
+}
+
+.footer-description p {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.5;
 }
 
 .social-links {
     display: flex;
-    gap: 10px; /* Space between social icons */
+    gap: 10px;
     margin: 20px 0;
 }
 
 .social-links img {
-    width: 30px; /* Icon size */
+    width: 30px;
     height: 30px;
 }
 
+/* Footer Links */
 .footer-links {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr)); /* Dynamic layout for links */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 20px;
 }
 
 .footer-column h4 {
-    margin-bottom: 10px;
     font-size: 1rem;
+    color: #08584B;
+    margin-bottom: 10px;
 }
 
 .footer-column ul {
@@ -266,47 +262,68 @@ nav a, .nav-link {
 }
 
 .footer-column ul li {
-    margin-bottom: 5px;
+    margin-bottom: 8px;
 }
 
 .footer-column ul li a {
     text-decoration: none;
-    color: var(--text-color);
-    transition: color 0.3s;
+    color: #555;
+    font-size: 14px;
 }
 
 .footer-column ul li a:hover {
-    color: #028f67; /* Add hover effect for links */
+    color: #028f67;
 }
 
 .footer-bottom {
-    max-width: 75rem;
-    margin: 20px auto 0; /* Space above and center alignment */
-    margin-right: 40px auto 0; /* Space above and center alignment */
-    padding-top: 20px;
-    border-top: 1px solid rgba(0, 0, 0, 0.1); /* Subtle line to separate sections */
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap; /* Adjust layout for smaller screens */
-    gap: 10px;
-}
-
-.legal-links {
+    justify-content: space-between; /* Align links and text on the same plane */
+    align-items: center; /* Vertically align elements */
+    flex-wrap: nowrap; /* Ensure proper alignment on smaller screens */
+    font-size: 0.875rem; /* Match the font size of the copyright text */
+    color: #555; /* Match the color for consistency */
+    gap: 10px; /* Add spacing for wrapping items */
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+    margin-left: 265px; /* Add 175px left margin */
+    font-size: inherit; /* Ensure font size consistency */
+  }
+  
+  
+  .legal-links {
     display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    text-align: center;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .footer-container {
-        grid-template-columns: 1fr; /* Single column layout */
-    }
-
-    .footer-bottom {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-}
+    margin-right: 430px; /* Add 175px right margin */
+    gap: 20px; /* Add space between individual links */
+  }
+  
+  .legal-links a {
+    font-family: 'Montserrat', sans-serif; /* Match the desired font */
+    font-weight: 500; /* Medium weight for clarity */
+    font-size: inherit; /* Match the footer's font size */
+    text-decoration: none; /* Remove underlines */
+    color: #555; /* Ensure color matches copyright text */
+  }
+  
+  .legal-links a:hover {
+    text-decoration: underline; /* Add hover effect for clarity */
+  }
+  /* Remove "+" signs from navigation links */
+  .nav-links ul li::before {
+    content: none; /* Removes any "+" or other symbols */
+  }
+  
+  /* Remove "+" signs from popular articles */
+  .popular-articles ul li::before {
+    content: none; /* Removes any "+" or other symbols */
+  }
+  
+  /* General rule to prevent "+" signs globally (if needed) */
+  ul li::before {
+    content: none; /* Safeguard: removes any default content for list items */
+  }
+  a {
+      text-decoration: none; /* Removes the underline from all links */
+  }
+  
