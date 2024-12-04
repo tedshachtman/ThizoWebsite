@@ -308,7 +308,7 @@ h3 {
 }
 
 p {
-    font-size: 1rem;
+    font-size: 1.25rem;
     color: #666;
     line-height: 1.6;
     margin-bottom: 20px;
@@ -411,7 +411,7 @@ body {
 
 .resource-card {
     flex: 1 1 300px; /* Cards will grow and shrink, with a minimum width of 300px */
-    max-width: 400px;
+    max-width: 600px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);

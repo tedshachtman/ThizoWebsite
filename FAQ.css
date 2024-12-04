@@ -26,6 +26,128 @@ body, p, li, span, .body-text {
     color: #555;
     line-height: 1.6;
 }
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Apply to all headings (H1 to H6) */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700; /* Bold for main headings */
+  color: #08584B; /* Adjust color to suit your design */
+}
+
+/* Slightly lighter for subheadings */
+h2, h3 {
+  font-weight: 600;
+  color: #028F67; /* Adjust color to suit your design */
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Navbar Section */
+.navbar {
+  background-color: #ffffff;
+  padding: 20px 0;
+}
+
+/* Navigation links */
+nav a, .nav-link {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500; /* Medium weight for clarity */
+  text-transform: uppercase; /* Optional: make links uppercase */
+  color: #3A3A46; /* Customize color */
+  text-decoration: none; /* Remove underline */
+}
+
+/* Button styles */
+.button, .btn {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500; /* Medium weight for buttons */
+  color: #fff;
+  background-color: #028F67; /* Customize button color */
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.button:hover, .btn:hover {
+  background-color: #08584B;
+}
+
+.logo img {
+  width: 120px;
+  height: auto;
+}
+
+.nav-links {
+  flex: 1;
+  text-align: center;
+}
+
+.nav-links ul {
+  list-style: none;
+  display: inline-flex;
+  gap: 30px;
+  margin: 0;
+}
+
+.nav-links ul li a {
+  text-decoration: none;
+  color: #3A3A46;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.nav-links ul li a:hover {
+  color: #028F67;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.cta-buttons .button {
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s, color 0.3s;
+}
+
+.demo-button {
+  background-color: #08584B !important;
+  color: #ffffff !important;
+}
+
+.login-button {
+  background-color: #08584B !important;
+  color: #ffffff !important;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 /* FAQ Section Styles */
 .faq-section {

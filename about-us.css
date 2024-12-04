@@ -204,13 +204,34 @@ body {
     color: #666;
 }
 
-/* Three-Column Section */
+/* Focus Text Section */
+.focus-text {
+    background: #e8e8e8;
+    text-align: center;
+    margin-bottom: 2rem; /* Adds spacing between header and columns */
+}
+
+.focus-text h5 {
+    color: #ff6600 !important; /* Forces the color */
+    font-size: 2rem !important; /* Forces the font size */
+    margin-bottom: 0.5rem;
+}
+
+
+.focus-text p {
+    color: #333; /* Darker text color for contrast */
+    font-size: 1.2rem;
+}
+
+/* Column Section */
 .three-column {
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap; /* Ensures responsiveness */
+    justify-content: center; /* Centers the columns */
+    gap: 2rem; /* Adds spacing between columns */
     align-items: flex-start;
     padding: 2rem;
-    background: #f9f9f9;
+    background: #e8e8e8; /* Sets the background color */
     text-align: center;
 }
 
@@ -221,8 +242,8 @@ body {
 }
 
 .column img {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 150px;
     margin-bottom: 1rem;
 }
 
@@ -238,17 +259,6 @@ body {
     margin-bottom: 1rem;
 }
 
-.column a {
-    font-size: 1rem;
-    color: #ff6600;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.column a:hover {
-    text-decoration: underline;
-}
-
 /* Privacy Section */
 .privacy-section {
     text-align: center;
@@ -259,11 +269,13 @@ body {
 
 .privacy-section h2 {
     font-size: 2.5em;
+    color: #ffffff;
     margin-bottom: 20px;
 }
 
 .privacy-section p {
     font-size: 1.2em;
+    color: #ffffff;
     margin-bottom: 40px;
 }
 
@@ -380,4 +392,9 @@ body {
         align-items: center;
         text-align: center;
     }
+}
+.focus-text h5 {
+    color: #ff6600 !important; /* Forces the color */
+    font-size: 2rem !important; /* Forces the font size */
+    margin-bottom: 0.5rem;
 }
