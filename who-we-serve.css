@@ -130,37 +130,33 @@ nav a, .nav-link {
 /* Hero Content */
 .hero-content {
     position: absolute;
-    top: 50%;
-    left: 10%;
-    transform: translateY(-50%);
+    top: 50%; /* Centers content vertically */
+    left: 5%; /* Adjusts horizontal position */
+    transform: translateY(-50%); /* Adjusts for exact vertical centering */
     max-width: 600px;
-    z-index: 2;
-    text-align: center;
-    margin-right: 50px; /* Pushes content away from the image */
-}
-
-.hero-content h1 {
-    font-size: 2.8rem;
+    z-index: 2; /* Places content above the overlay */
+    text-align: center; /* Center text content */
+  }
+  
+  .hero-content h1 {
+    font-size: 2.5rem;
     color: #3A3A46;
     margin-bottom: 10px;
-}
-
-.hero-content p {
+  }
+  
+  .hero-content p {
     font-size: 1.2rem;
-    line-height: 1.6;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     color: #08584B;
-}
-
-/* Hero Buttons */
-.hero-buttons {
-    margin-top: 20px;
-    text-align: center;
-    display: flex; /* Changed 'center' to 'flex' to ensure proper layout */
-    gap: 20px;
-}
-
-.hero-buttons .button {
+  }
+  
+  /* Hero Buttons */
+  .hero-buttons {
+    margin-top: 20px; /* Space between paragraph and buttons */
+    text-align: center; /* Aligns buttons to the center */
+  }
+  
+  .hero-buttons .button {
     padding: 15px 30px;
     font-size: 1.2rem;
     color: #fff;
@@ -169,12 +165,13 @@ nav a, .nav-link {
     border-radius: 10px;
     text-decoration: none;
     transition: background-color 0.3s ease;
-    text-align: center;
-}
-
-.hero-buttons .button:hover {
+    margin-right: 20px; /* Adds space between buttons */
+    display: inline-block;
+  }
+  
+  .hero-buttons .button:hover {
     background-color: #028F67;
-}
+  }
 
 /* Foreground Image Styling */
 .hero-foreground {
