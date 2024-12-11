@@ -131,15 +131,15 @@ body, p, li, span, .body-text {
   display: flex;
   justify-content: center; /* Center content horizontally */
   align-items: center; /* Center content vertically */
-  padding: 20px !important; /* Reduce padding to shrink vertical space */
+  padding: 40px; /* Increase padding for better spacing */
   background-image: url('https://i.ibb.co/cY65C1K/Pricing-1.png'); /* Background image */
   background-size: cover; /* Ensures the image covers the section */
   background-position: center; /* Center the background image */
   background-repeat: no-repeat;
   background-color: rgba(255, 255, 255, 0.3); /* Light washed-out effect */
-  background-blend-mode: lighten; /* This ensures the image looks washed out */
-  height: 15vh !important; /* Reduce height to 15% of the viewport */
-  max-height: 200px; /* Additional constraint for devices with tall viewports */
+  background-blend-mode: lighten; /* Ensures the image looks washed out */
+  height: 60vh; /* Increase height to 60% of the viewport */
+  max-height: none; /* Remove height constraint */
 }
 
 .hero-content {

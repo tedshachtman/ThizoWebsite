@@ -139,28 +139,88 @@ nav a, .nav-link {
 }
 /* Hero Section */
 .hero {
-    background-color: #e8e8e8;
-    padding: 40px 0;
-    text-align: center;
+    position: relative;
+    padding: 50px 20px;
     background-image: url('https://i.ibb.co/2hPHLDM/meeting-2954348-1280.jpg');
-    background-size: cover; /* Ensures the image covers the hero section */
-    background-repeat: no-repeat; /* Prevents tiling */
-    background-position: center; /* Centers the image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 1800px;
+    margin: 0 auto;
+    height: 75vh;
+    overflow: hidden;
 }
 
-.hero-image {
-    width: 100%;
-    max-width: 800px;
-    height: auto;
-    margin-right: 150px; /* Add spacing below the title */
+/* Overlay Effect */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.6); /* Semi-transparent white */
+    z-index: 1; /* Ensure overlay appears above the background but below content */
+}
+
+/* Hero Content */
+.hero-content {
+    position: absolute;
+    top: 50%; /* Centers content vertically */
+    left: 5%; /* Adjusts horizontal position */
+    transform: translateY(-50%); /* Adjusts for exact vertical centering */
+    max-width: 600px;
+    z-index: 2; /* Places content above the overlay */
+    text-align: center; /* Center text content */
+  }
+  
+  .hero-content h1 {
+    font-size: 2.5rem;
+    color: #3A3A46;
+    margin-bottom: 10px;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #08584B;
+  }
+/* Foreground Image Styling */
+.hero-foreground {
+    position: absolute;
+    right: 20%; /* Adjusted to 20% for more padding on the right */
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    max-width: 400px; /* Adjusted width */
     border-radius: 10px;
-}
-/* Content Section */
-.content {
-    background-color: #ffffff;
-    padding: 40px 20px;
-}
-
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .hero {
+        height: auto;
+        max-width: 100%;
+        padding: 20px;
+    }
+    .hero-content {
+        position: relative;
+        top: unset;
+        left: unset;
+        transform: none; /* Remove transform on smaller screens */
+        max-width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+    .hero-foreground {
+        position: relative;
+        top: unset;
+        transform: none;
+        right: 0;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    
 .overview {
     display: flex;
     gap: 20px;
