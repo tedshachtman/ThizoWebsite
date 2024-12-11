@@ -155,8 +155,8 @@ nav a, .nav-link {
 /* Hero Buttons */
 .hero-buttons {
     margin-top: 20px;
-    text-align: center
-    display: flex;
+    text-align: center;
+    display: flex; /* Changed 'center' to 'flex' to ensure proper layout */
     gap: 20px;
 }
 
@@ -169,7 +169,7 @@ nav a, .nav-link {
     border-radius: 10px;
     text-decoration: none;
     transition: background-color 0.3s ease;
-    text-align: center; /* Aligns buttons to the center without using flex properties */
+    text-align: center;
 }
 
 .hero-buttons .button:hover {

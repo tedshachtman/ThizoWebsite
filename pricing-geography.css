@@ -104,21 +104,22 @@ nav a, .nav-link {
 /* Hero Section */
 /* General body text */
 body, p, li, span, .body-text {
-    font-family: 'Montserrat', sa/* Apply to all headings (H1 to H6) */
+  font-family: 'Montserrat', sans-serif; /* Fixed font-family declaration */
+  font-weight: 400; /* Regular weight for body content */
+  color: #555; /* Adjust color to suit your design */
+  line-height: 1.6; /* Add line height for readability */
+}
+
+/* Apply to all headings (H1 to H6) */
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700; /* Bold for main headings */
-    color: #333; /* Adjust color to suit your design */
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700; /* Bold for main headings */
+  color: #333; /* Adjust color to suit your design */
 }
 
 /* Slightly lighter for subheadings */
 h2, h3 {
-    font-weight: 600;
-}
-ns-serif;
-    font-weight: 400; /* Regular weight for body content */
-    color: #555; /* Adjust color to suit your design */
-    line-height: 1.6; /* Add line height for readability */
+  font-weight: 600;
 }
 
 .hero {
