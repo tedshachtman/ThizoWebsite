@@ -39,12 +39,15 @@ body {
 
 /* Container */
 .container {
-    max-width: 1440px; /* Adjusted max-width for wider screens */
-    margin: auto;
+    width: 100%; 
+    max-width: 1200px; /* Match the good page */
+    margin: 0 auto;
     padding: 0 20px;
     display: flex;
+    overflow: hidden; 
     align-items: center;
     justify-content: space-between;
+    .container
 }
 
 /* Navbar Section */
@@ -62,7 +65,7 @@ nav a, .nav-link {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     color: #fff;
-    background-color: #ffa500;
+    background-color: #08584B;
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
@@ -76,16 +79,27 @@ nav a, .nav-link {
 .navbar {
     background-color: #ffffff;
     padding: 20px 0;
-    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space out logo and buttons */
+    overflow: hidden; /* Clear floats */
+}
+
+.logo {
+    float: left; /* Align logo to the left */
 }
 
 .logo img {
-    width: 120px;
+    height: 200px; /* Set consistent height */
+    width: auto; 
+    max-height: none; /* Prevent unintended stretching */
+    max-width: none; /* Remove unnecessary restrictions */
 }
 
 .nav-links {
-    flex: 1;
+    display: inline-block;
     text-align: center;
+    margin: 0 auto; /* Center navigation links */
 }
 
 .nav-links ul {

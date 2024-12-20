@@ -138,13 +138,11 @@ body {
 
 /* Hero Section */
 .hero {
-    min-height: 100vh;
+    min-height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('https://i.ibb.co/NZBgqdp/Adobe-Stock-708924372.jpg');
-    background-size: cover;
-    background-position: center;
+    background-color: #f6BFA8; /* Updated to requested color */
     position: relative;
     margin-top: 1rem;
 }
@@ -165,7 +163,8 @@ body {
 }
 
 .hero h1 {
-    font-size: clamp(2rem, 5vw, 3rem);
+    font-size: clamp(4rem, 7vw, 3.75rem);
+    font-family: 'nobel uno', sans-serif;
     margin-bottom: calc(var(--spacing-unit) * 1.25);
 }
 
