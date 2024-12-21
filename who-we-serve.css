@@ -6,9 +6,9 @@
 }
 
 body {
-    font-family: 'Autodesk Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
-}
+  }
 
 /* Container */
 .container {
@@ -105,26 +105,14 @@ nav a, .nav-link {
 .hero {
     position: relative;
     padding: 50px 20px;
-    background-image: url('https://i.ibb.co/fQY7kCf/Who-We-Serve-1.png'); /* Updated background image */
+    background-image: url('https://i.ibb.co/yYdpqDX/Thizo-Website-Who-We-Serve-Hero-Fade.jpg'); /* Updated background image */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     max-width: 1800px;
     margin: 0 auto;
-    height: 75vh;
+    height: 60vh;
     overflow: hidden;
-}
-
-/* Overlay Effect */
-.hero::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white */
-    z-index: 1; /* Ensure overlay appears above the background but below content */
 }
 
 /* Hero Content */
@@ -216,6 +204,14 @@ nav a, .nav-link {
         text-align: center;
     }
 }
+
+/* General body text */
+body, p, li, span, .body-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400; /* Regular weight for body content */
+    color: #3A3A46; /* Adjust color to suit your design */
+    line-height: 1.6; /* Add line height for readability */
+  }
 
 /* Solutions Section (Section 2) */
 .solutions {

@@ -24,7 +24,7 @@
 }
 
 body {
-    font-family: "Autodesk Sans", sans-serif;
+    font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
     font-size: clamp(1rem, 1vw + 0.5rem, 1.125rem);
 }
@@ -120,14 +120,11 @@ h3 {
   align-items: center; /* Center content vertically */
   gap: var(--spacing-md); /* Adds spacing between columns */
   padding: var(--spacing-lg);
-  background-image: url('https://i.ibb.co/cY65C1K/Pricing-1.png'); /* Background image */
+  background-image: url('https://i.ibb.co/hfzPjT0/Thizo-Website-Pricing-Hero-fade.jpg'); /* Background image */
   background-size: cover; /* Ensures the image covers the section */
   background-position: center; /* Center the background image */
   background-repeat: no-repeat;
-  background-color: rgba(255, 255, 255, 0.3); /* Light washed-out effect */
-  background-blend-mode: lighten; /* Ensures image looks washed out */
-  height: auto; /* Allows height to be defined by content */
-  margin-bottom: var(--spacing-lg); /* Adds spacing below the hero section */
+  height: 60vh;
 }
 
 /* Hero Content (Text on the Left) */
@@ -150,15 +147,6 @@ h3 {
   margin-left: 250px;
   color: #08584B;
   text-align: center;
-}
-
-/* Foreground Image Styling (Right Column) */
-.hero-image {
-  margin-right: 250px;
-  justify-self: end; /* Aligns the image to the right */
-  max-width: 600px;
-  border-radius: 10px;
-  display: center; 
 }
 
 /* Custom Quote Section */
@@ -257,39 +245,38 @@ h3 {
 }
 
 /* Pricing Information Section */
-/* Full-width grey background */
+/* Pricing Information Section */
 .pricing-section {
-  padding: 80px 0; /* Vertical padding only */
+  padding: 80px 0; /* Vertical padding */
   background-color: #E8E8E8;
-  width: 100vw;
-  margin-left: calc(50% - 50vw); /* Extends background across viewport */
+  width: 100%; /* Full width */
+  margin: 0px auto; /* Center horizontally */
 }
 
-/* Inner container to add left and right padding */
+/* Inner container to center content */
 .pricing-content-container {
-  max-width: 1200px; /* Optional, to limit overall width */
-  margin: 0 auto;
-  padding: 0 60px; /* 60px padding on left and right */
+  max-width: 1200px; /* Limit the maximum width of the container */
+  margin: 0 50px; /* Center the container */
+  padding: 0 100px; /* Add significant padding left/right to bring content inward */
 }
 
-/* Flex container for text and image */
+/* Grid container for text and image */
 .pricing-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 140px;
-  flex-wrap: nowrap; /* Ensure elements are side by side */
+  display: grid; /* Use grid layout */
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  column-gap: 40px; /* Space between text and image */
+  align-items: center; /* Vertically align content */
 }
 
 /* Black background box for text */
 .pricing-text {
-  background-color: #000000; /* Set to black for strong contrast */
-  color: #ffffff !important;
-  padding: 30px;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 100px;
   border-radius: 10px;
-  flex: 1 1 45%;
   max-width: 600px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Adds shadow for depth */
+  margin-left: 75px; 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add depth with shadow */
 }
 
 /* Ensure all text inside .pricing-text is white */
@@ -299,10 +286,9 @@ h3 {
 
 /* Image container */
 .pricing-image {
-  flex: 1 1 45%;
+  justify-self: end; /* Align image to the right */
   max-width: 600px;
-  display: flex;
-  justify-content: flex-end;
+  margin-right: 75px; 
 }
 
 .pricing-image img {
@@ -313,16 +299,12 @@ h3 {
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .pricing-content {
-    flex-direction: column; /* Stack text and image vertically */
-    gap: 20px;
-  }
-
-  .pricing-text, .pricing-image {
-    flex: 1 1 100%;
+    grid-template-columns: 1fr; /* Stack text and image vertically */
+    row-gap: 20px; /* Space between rows */
   }
 
   .pricing-content-container {
-    padding: 0 20px; /* Reduce padding on smaller screens */
+    padding: 0 20px; /* Reduce padding for smaller screens */
   }
 }
 

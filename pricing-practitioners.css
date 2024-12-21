@@ -141,7 +141,7 @@ body, p, li, span, .body-text {
     background-color: rgba(255, 255, 255, 0.3); /* Light washed-out effect */
     background-blend-mode: lighten; /* This ensures the image looks washed out */
     height: 60vh; /* Increase height to 60% of the viewport */
-    max-height: none; /* Remove height constraint */
+    max-height: 60vh; 
   }
 
 .hero-content {

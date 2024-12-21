@@ -48,7 +48,7 @@ body {
     align-items: center;
     justify-content: space-between;
     .container
-}
+{
 
 /* Navbar Section */
 /* Primary Navigation Links */
@@ -504,4 +504,4 @@ nav a, .nav-link {
 .project-option:nth-child(6) { animation-delay: 0.45s; }
 .project-option:nth-child(7) { animation-delay: 0.5s; }
 .project-option:nth-child(8) { animation-delay: 0.55s; }
-.project-option:nth-child(9) { animation-delay: 0.6s; }
+.project-option:nth-child(9) { animation-delay: 0.6s;}

@@ -4,7 +4,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-}
+
 /* Apply to all headings (H1 to H6) */
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
@@ -122,13 +122,13 @@ nav a, .nav-link {
 }
 
 .demo-button {
-    background-color: #08584B;!important;
-    color: #ffffff;!important;
+    background-color: #08584B; 
+    color: #fff; 
 }
 
 .login-button {
     background-color: #08584B;!important;
-    color: #ffffff;!important;
+    color: #fff;!important;
 }
 body {
     margin: 0;
@@ -138,7 +138,7 @@ body {
 
 /* Hero Section */
 .hero {
-    min-height: 80vh;
+    min-height: 75vh;
     display: flex;
     align-items: center;
     justify-content: center;

@@ -63,7 +63,7 @@ input[type="text"], input[type="email"], textarea {
   border-radius: 5px;
   font-size: 1rem;
   box-sizing: border-box;
-  background-color: #fffff;
+  background-color: #FFFFFF;
 }
 
 textarea {
@@ -105,4 +105,4 @@ textarea {
 a {
     text-decoration: none;
     color: inherit; /* Keeps the color the same as the surrounding text */
-}
+}}

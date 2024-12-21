@@ -89,24 +89,13 @@ body {
 .hero {
     position: relative;
     padding: 50px 20px;
-    background-image: url('https://i.ibb.co/XV1sZMz/pexels-hillaryfox-1595391.jpg');
+    background-image: url('https://i.ibb.co/Dbrxk8z/Thizo-Website.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 75vh;
+    height: 60vh;
     overflow: hidden;
 }
-/* Overlay Effect */
-.hero::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(255, 255, 255, 0.6); /* Semi-transparent white */
-    z-index: 1; /* Ensure overlay appears above the background but below content */
-  }
 
 .hero-content {
     position: absolute;

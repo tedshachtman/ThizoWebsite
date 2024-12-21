@@ -116,7 +116,7 @@ nav a, .nav-link {
     gap: 15px; /* Space between cards */
     margin: 40px auto; /* Center the grid vertically and horizontally */
     margin-left: 400px /* Move lext to right 400px */
-    max-width: 100%; /* Restrict width */
+    max-width 100%; /* Restrict width */
     padding: 20px;
 }
 

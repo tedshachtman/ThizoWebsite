@@ -108,26 +108,14 @@
   .hero {
       position: relative;
       padding: 50px 20px;
-      background-image: url("https://i.ibb.co/ssvTtyP/library-5641389-1280.jpg"); /* Updated background image */
+      background-image: url("https://i.ibb.co/0mtqC26/Thizo-Website-Resources-Hero-fade.jpg"); /* Updated background image */
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
       max-width: 1800px;
       margin: 0 auto;
-      height: 75vh;
+      height: 60vh;
       overflow: hidden;
-  }
-  
-  /* Overlay Effect */
-  .hero::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white overlay */
-      z-index: 1; /* Ensures overlay is above background but below content */
   }
   
   /* Hero Content */
@@ -178,19 +166,6 @@
   
   .btn.learn-more:hover {
       background-color: #028f67 !important; 
-  }
-  
-  /* Foreground Image Styling */
-  .hero-foreground {
-      position: absolute;
-      right: 30%; /* Adjusted to 5% for spacing on the right */
-      top: 25%;
-      transform: translateY(-50%);
-      z-index: 3; /* Above the overlay */
-      max-width: 280px; /* Size as specified in second CSS */
-      max-height: 150px;
-      border-radius: 20px;
-      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for depth */
   }
   
   /* Responsive Adjustments */
